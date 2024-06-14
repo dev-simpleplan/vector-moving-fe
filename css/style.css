@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+body{
+    font-family: "Instrument Sans", sans-serif;
+}
+
+h1, h2, h3, h3, h4, h5, h6{
+   font-family: "Red Hat Display", sans-serif;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.announcement-bar{
+    background-color: #F3F3BD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.announcement-bar-text{
+    padding: 10px;
+}
+.announcement-bar-text span{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #404040;
+}
