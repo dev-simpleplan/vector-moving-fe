@@ -33,16 +33,25 @@ ul{
     list-style: none;
     display: flex;
 }
+
+/* Header CSS Starts*/
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 99999;
+}
 .header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 50px;
+    padding: 0 50px;
 }
-.header-container nav ul{
+.header-container nav > ul{
     gap: 35px;
+    align-items: center;
 }
-.header-container nav ul li a{
+.header-container nav > ul > li.dropdown-link > div, .header-container nav > ul > li.non-dropdown-link > a{
     font-family: var(--redHat);
     font-size: 12px;
     font-weight: 700;
@@ -51,8 +60,9 @@ ul{
     color: #FAFAFA;
     text-transform: uppercase;
     position: relative;
+    cursor: pointer;
 }
-.header-container nav ul li a::before{
+.header-container nav > ul > li.dropdown-link > div::before, .header-container nav > ul > li.non-dropdown-link > a::before{
     content: "";
     position: absolute;
     display: block;
@@ -64,7 +74,7 @@ ul{
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-.header-container nav ul li a:hover::before{
+.header-container nav > ul > li.dropdown-link:hover > div::before, .header-container nav > ul > li.non-dropdown-link:hover > a::before{
     transform: scaleX(1);
 }
 .announcement-bar{
@@ -104,6 +114,266 @@ ul{
     align-items: center;
     gap: 36px;
 }
+.dropdown-link{
+    position: relative;
+    cursor: pointer;
+    padding: 30px 0;
+}
+.non-dropdown-link{
+    display: flex;
+}
+.dropdown-links{
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+    transition: .6s ease all;
+    background-color: #FBF9F5;
+}
+.dropdown-link:hover .dropdown-links{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.dropdown-links ul{
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FBF9F5;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    padding-right: 10px;
+    min-width: 140px;
+    position: absolute;
+}
+.dropdown-links ul li a{
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #403548;
+    text-transform: capitalize;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdown-links-wrap{
+    display: flex;
+    min-width: 560px;
+    gap: 34px;
+    padding: 14px 14px 0px 27px;
+}
+.dropdown-links-column-links a{
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #313131;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.dropdown-links-column-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    gap: 3px;
+}
+.dropdown-links-column-head a{
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #403548;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.dropdown-links-column .dropdown-links-column-head:not(:first-child){
+    padding-top: 8px;
+}
+.view-all-locations{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 35px 14px 19px 27px;
+}
+.view-all-locations a{
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    color: #DE643B;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.hamburger-icon{
+    display: none;
+    cursor: pointer;
+}
+.main-navbar{
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background: #FDF9F4;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform .7s cubic-bezier(.895, .03, .685, .22);
+    transition: -webkit-transform .7s cubic-bezier(.895, .03, .685, .22);
+    transition: transform .7s cubic-bezier(.895, .03, .685, .22);
+    transition: transform .7s cubic-bezier(.895, .03, .685, .22), -webkit-transform .7s cubic-bezier(.895, .03, .685, .22);
+}
+.main-navbar.active{
+    pointer-events: all;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.main-navbar .header-container{
+    flex-direction: column;
+    align-items: normal;
+}
+.main-navbar-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-navbar-cross{
+    cursor: pointer;
+}
+.main-navbar-dropdown-links ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: var(--instru);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.main-navbar-dropdown-links ul li a img{
+    width: 8px;
+}
+.main-navbar-dropdown-head{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--redHat);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22.4px;
+    letter-spacing: 4px;
+    color: #DE643B;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F2EAE0;
+}
+.main-navbar-dropdown-head img{
+    transition: .2s ease all;
+}
+.main-navbar-dropdown-head.active img{
+    transform: rotate(180deg);
+}
+.main-navbar-dropdown-links > div > ul{
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 15px;
+    padding-left: 6px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+.main-navbar-bottom{
+    padding: 0 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main-navbar-dropdown-links{
+    padding-top: 0px;
+    --webkit-transition: all .4s;
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: all .4s;
+}
+.main-navbar-dropdown-links.active{
+    opacity: 1;
+    grid-template-rows: 1fr;
+}
+.main-navbar-dropdown-links div{
+    overflow: hidden;
+}
+.main-navbar-dropdown .main-navbar-dropdown-head-con{
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+.main-navbar-dropdown .main-navbar-dropdown-head-con span{
+    color: #DE643B;
+    font-size: 16px;
+}
+.main-navbar-dropdown-links-children ul{
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 8px;
+    max-width: 100px;
+}
+.main-navbar-dropdown-links-children ul li a{
+    font-family: var(--instru);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #443029;
+}
+.main-navbar .header-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/* Header CSS Ends */
+
+/* Home Baner CSS Starts */
+.home-banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.home-banner-img{
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+}
+.home-banner-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* Home Banner CSS Ends */
+
+
+/* Button CSS Starts */
 .btn .arrow.first {
     transform: scale(0) rotate(0.001deg);
     transform-origin: left;
@@ -199,4 +469,64 @@ ul{
 }
 .arrow.second .arrow-content{
     transform: rotate(-45deg);
+}
+/* Button CSS Ends */
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width:1400px){
+    .header-container{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:1300px){
+    .header-container{
+        padding: 0 20px;
+    }
+    .header-container nav > ul{
+        gap: 30px;
+    }
+    .header-container nav > ul > li.dropdown-link > div, .header-container nav > ul > li.non-dropdown-link > a{
+        font-size: 10px;
+    }
+    .btn-content .btn-text span{
+        font-size: 10px;
+    }
+    .btn-content{
+        padding: 9px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .hamburger-icon{
+        display: flex;
+    }
+    .contact-info-number{
+        display: none;
+    }
+    .header-container nav{
+        display: none;
+    }
+    .header-container{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .header-container{
+        padding: 0 15px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .contact-info{
+        gap: 15px;
+    }
 }
