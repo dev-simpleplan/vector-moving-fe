@@ -35,5 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const header = document.querySelector('header');
+        function toggleHeaderClass() {
+            if (window.scrollY > 100) {
+              header.classList.add('active');
+            } else {
+              header.classList.remove('active');
+            }
+          }
+// Listen for scroll events and call the toggleHeaderClass function
+          window.addEventListener('scroll', toggleHeaderClass);
+
+    
+
   });
   
