@@ -2590,4 +2590,7 @@ footer{
     .moving-steps-card-body{
         transform: translateY(-70px);
     }
+    .moving-steps-container{
+        
+    }
 }
