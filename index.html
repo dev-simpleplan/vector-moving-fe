@@ -2072,22 +2072,42 @@
 //     .to(".mark_section .msmli1", { scale: 1.1 }, "<");
 
 var swiper = new Swiper('.moving-admired-container .swiper-container', {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerView: 1.2,
+      slidesPerGroup: 1,
       spaceBetween: 29,
       navigation: {
         nextEl: '.moving-admired-container .moving-swipe-right',
         prevEl: '.moving-admired-container .moving-swipe-left',
-      }
+      },
+        breakpoints: {
+          991: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+          },
+          767: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+          }
+        },
     });
     var swiper = new Swiper('.moving-community-container .swiper-container', {
-      slidesPerView: 3.5,
-      slidesPerGroup: 3.5,
+      slidesPerView: 1.2,
+      slidesPerGroup: 1,
       spaceBetween: 32,
       navigation: {
         nextEl: '.moving-community-container .moving-swipe-right',
         prevEl: '.moving-community-container .moving-swipe-left',
-      }
+      },
+        breakpoints: {
+          991: {
+            slidesPerView: 3.5,
+            slidesPerGroup: 3
+          },
+          767: {
+            slidesPerView: 2.5,
+            slidesPerGroup: 2
+          }
+        },
     });    
 
     document.querySelectorAll('.moving-customers-bottom-video video').forEach((e)=>{
@@ -2101,6 +2121,10 @@ var swiper = new Swiper('.moving-admired-container .swiper-container', {
             e.pause();
         });
     })
+    let mm = gsap.matchMedia();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(min-width: 1101px)", () => {
     let t6 = gsap.timeline({
     scrollTrigger: {
       trigger: ".moving-steps",
@@ -2139,7 +2163,128 @@ var swiper = new Swiper('.moving-admired-container .swiper-container', {
     .to(".moving-steps-card.four", { yPercent:-240}, "<")
     .to(".moving-steps-line.four", { yPercent: -190}, "<")
     .to(".moving-steps-card.four .moving-steps-card-body", { opacity:1},"<")
+});
 
+mm.add("(min-width:992px and max-width:1100px)", () => {
+    let t6 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".moving-steps",
+      start: "-50% top",
+      end: "400% bottom",
+      pin: true,
+      markers: false,
+      scrub: 1
+    }
+  });
+  t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -130}, 0)
+    .to(".moving-steps-card.one .moving-steps-card-body", { y: -130, opacity:0}, "<")
+    .to(".moving-steps-line.one", { top: 30}, "<")
+    .to(".moving-steps-line.one .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.one .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-line.two", { yPercent: -110}, "<")
+    .to(".moving-steps-line.three", { yPercent: -50}, "<")
+    .to(".moving-steps-card.two", { yPercent: -80}, "<")
+    .to(".moving-steps-card.two .moving-steps-card-body", { opacity:1}, "<")
+    .to(".moving-steps-card.two .moving-steps-card-body", { opacity:0})
+    .to(".moving-steps-line.two .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-card.three", { yPercent:-160}, "<")
+    .to(".moving-steps-line.three", { yPercent: -120}, "<")
+    .to(".moving-steps-line.four", { yPercent: -120}, "<")
+    .to(".moving-steps-card.three .moving-steps-card-body", { opacity:1},"<")
+    .to(".moving-steps-card.three .moving-steps-card-body", { opacity:0})
+    .to(".moving-steps-line.three .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.four .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.four .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-card.four", { yPercent:-240}, "<")
+    .to(".moving-steps-line.four", { yPercent: -190}, "<")
+    .to(".moving-steps-card.four .moving-steps-card-body", { opacity:1},"<")
+});
+mm.add("(min-width:768px and max-width:991px)", () => {
+    let t6 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".moving-steps",
+      start: "0% top",
+      end: "400% bottom",
+      pin: true,
+      markers: false,
+      scrub: 1
+    }
+  });
+  t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -130}, 0)
+    .to(".moving-steps-card.one .moving-steps-card-body", { y: -130, opacity:0}, "<")
+    .to(".moving-steps-line.one", { top: 30}, "<")
+    .to(".moving-steps-line.one .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.one .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-line.two", { yPercent: -110}, "<")
+    .to(".moving-steps-line.three", { yPercent: -50}, "<")
+    .to(".moving-steps-card.two", { yPercent: -80}, "<")
+    .to(".moving-steps-card.two .moving-steps-card-body", { opacity:1}, "<")
+    .to(".moving-steps-card.two .moving-steps-card-body", { opacity:0})
+    .to(".moving-steps-line.two .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-card.three", { yPercent:-160}, "<")
+    .to(".moving-steps-line.three", { yPercent: -120}, "<")
+    .to(".moving-steps-line.four", { yPercent: -120}, "<")
+    .to(".moving-steps-card.three .moving-steps-card-body", { opacity:1},"<")
+    .to(".moving-steps-card.three .moving-steps-card-body", { opacity:0})
+    .to(".moving-steps-line.three .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.four .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.four .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-card.four", { yPercent:-240}, "<")
+    .to(".moving-steps-line.four", { yPercent: -190}, "<")
+    .to(".moving-steps-card.four .moving-steps-card-body", { opacity:1},"<")
+});
+mm.add("(max-width:767px)", () => {
+    let t6 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".moving-steps",
+      start: "20% top",
+      end: "400% bottom",
+      pin: true,
+      markers: false,
+      scrub: 1
+    }
+  });
+  t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -70}, 0)
+    .to(".moving-steps-card.one .moving-steps-card-body", { y: -70, opacity:0}, "<")
+    .to(".moving-steps-line.one", { top: 30}, "<")
+    .to(".moving-steps-line.one .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.one .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-line.two", { yPercent: -110}, "<")
+    .to(".moving-steps-line.three", { yPercent: -50}, "<")
+    .to(".moving-steps-card.two", { yPercent: -80}, "<")
+    .to(".moving-steps-card.two .moving-steps-card-body", { opacity:1}, "<")
+    .to(".moving-steps-card.two .moving-steps-card-body", { opacity:0})
+    .to(".moving-steps-line.two .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.two .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-card.three", { yPercent:-160}, "<")
+    .to(".moving-steps-line.three", { yPercent: -120}, "<")
+    .to(".moving-steps-line.four", { yPercent: -120}, "<")
+    .to(".moving-steps-card.three .moving-steps-card-body", { opacity:1},"<")
+    .to(".moving-steps-card.three .moving-steps-card-body", { opacity:0})
+    .to(".moving-steps-line.three .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
+    .to(".moving-steps-line.three .moving-steps-line-top-number", {color:'#aeaeae'},"<")
+    .to(".moving-steps-line.four .moving-steps-line-top-circle", {backgroundColor:'#2D1D38', border: '1px solid #2D1D38'},"<")
+    .to(".moving-steps-line.four .moving-steps-line-top-number", {color:'#3B3B3B'},"<")
+    .to(".moving-steps-card.four", { yPercent:-240}, "<")
+    .to(".moving-steps-line.four", { yPercent: -190}, "<")
+    .to(".moving-steps-card.four .moving-steps-card-body", { opacity:1},"<")
+});
 
     document.querySelectorAll('.moving-include-bottom-faq-head').forEach((element) => {
                 element.addEventListener("click", () => {

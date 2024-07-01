@@ -1077,6 +1077,9 @@ header.active .contact-info-number-num span{
 .moving-why-card.one .moving-why-card-icon{
     opacity: 1;
 }
+.moving-customers{
+    overflow: hidden;
+}
 .moving-customers-container{
     padding: 0px 46px;
 }
@@ -1386,6 +1389,7 @@ header.active .contact-info-number-num span{
     padding-left: 90px;
     padding-right: 110px;
     justify-content: space-between;
+    gap: 70px;
 }
 .moving-steps-card-body{
     padding-top: 20px;
@@ -1769,6 +1773,9 @@ header.active .contact-info-number-num span{
 .moving-faqs-right img{
     position: relative;
     z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .moving-faqs-right-bg{
     position: absolute;
@@ -2007,8 +2014,6 @@ footer{
 }
 .footer-logo img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .made-with-love{
     padding-top: 10px;
@@ -2177,6 +2182,18 @@ footer{
     .moving-locations-bottom-location{
         min-width: auto;
     }
+    .moving-customers-bottom{
+        scroll-snap-type: x mandatory;
+        overflow: hidden;
+        overflow-x: auto;
+        width: 100%;
+    }
+    .moving-customers-bottom .moving-customers-card:last-child{
+        margin-right: 60px;
+    }
+    .moving-customers-card{
+        flex-shrink: 0;
+    }
 }
 @media only screen and (max-width:1200px){
     .hamburger-icon{
@@ -2195,6 +2212,21 @@ footer{
     .about-home-container{
         padding-left: 50px;
     }
+    .footer-top{
+        flex-wrap: wrap;
+    }
+    .footer-top{
+        gap:50px;
+    }
+    .footer-logo{
+        max-width: 255px;
+    }
+    .moving-steps-card-body p{
+        max-width: 100%;
+    }
+    .moving-steps-card{
+        padding-right: 40px;
+    }
 }
 @media only screen and (max-width:1100px){
     .moving-locations-bottom-locations{
@@ -2202,6 +2234,12 @@ footer{
     }
     .moving-locations-bottom-locations{
         row-gap: 70px;
+    }
+    .moving-steps-card-head{
+        transform: translateY(-130px);
+    }
+    .moving-steps-card-body{
+        transform: translateY(-130px);
     }
 }
 @media only screen and (max-width:991px){
@@ -2267,6 +2305,84 @@ footer{
     }
     .moving-locations-top-left{
         width: 100%;
+    }
+    .moving-customers-card{
+        width: 30%;
+    }
+    .moving-customers-stats{
+        flex-direction: column;
+    }
+    .moving-customers-stats-wrap{
+        width: 100%;
+    }
+    .moving-customers-bottom-video{
+        padding-top: 60%;
+    }
+    .moving-included-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .moving-included-left{
+        width: 100%;
+    }
+    .moving-included-left-right{
+        width: 100%;
+        padding-top: 80%;
+    }
+    .moving-included-container{
+        padding-right: 70px;
+    }
+    .moving-insights-bottom{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .moving-faqs-container{
+        flex-direction: column;
+        gap: 60px;
+        padding-right: 64px;
+    }
+    .moving-faqs-left{
+        width: 100%;
+    }
+    .moving-faqs-right{
+        margin: 0 auto;
+    }
+    .moving-lets-top{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .moving-lets-bottom{
+        padding-top: 60px;
+    }
+    .footer-copy-logo{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-copy-logo p{
+        text-align: center;
+    }
+    .footer-policy-links{
+        justify-content: center;
+    }
+    .made-with-love{
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .moving-steps-container{
+        flex-direction: column;
+    }
+    .moving-steps-right{
+        width: 100%;
+    }
+    .moving-steps-container{
+        padding-left: 50px;
+    }
+    .moving-steps-card{
+        height: 274px;
+    }
+    .moving-steps{
+        padding-bottom: 460px;
     }
 }
 @media only screen and (max-width:767px){
@@ -2362,5 +2478,116 @@ footer{
     }
     .spacer {
         height: 100px;
+    }
+    .moving-customers-card {
+        width: 60%;
+    }
+    .moving-customers-stats-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .moving-customers-bottom-video {
+        padding-top: 120%;
+    }
+    .moving-admired-container .moving-customers-top{
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+    .moving-admired-container {
+        padding: 0px 20px 0px 20px;
+    }
+    .moving-customers-container {
+        padding: 0px 20px;
+    }
+    .moving-customers-bottom{
+        padding: 0px 20px;
+        padding-top: 45px;
+    }
+    .moving-included-container{
+        padding: 0 20px;
+    }
+    .moving-include-bottom-faqs{
+        padding-top: 50px;
+    }
+    .moving-include-bottom-faq-head-left{
+        max-width: 29ch;
+    }
+    .moving-include-bottom-faq-head{
+        gap: 0px;
+    }
+    .moving-include-bottom-faq-body p {
+        padding-left: 28px;
+    }
+    .moving-include-bottom-faq-head-left {
+        gap: 15px;
+    }
+    .moving-insights-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .moving-insights-container{
+        padding: 0px 20px;
+    }
+    .moving-faqs-container{
+        padding: 0px 20px;
+    }
+    .moving-faqs-right{
+        height: 100%;
+        width: 100%;
+    }
+    .moving-faqs-left-bottom-text a, .moving-faqs-left-bottom-text{
+        font-size: 14px;
+    }
+    .moving-community-container .moving-customers-top{
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+    .moving-community-container{
+        padding-left: 20px;
+    }
+    .moving-lets-top-left{
+        font-size: 70px;
+        line-height: 68px;
+    }
+    .moving-lets-top{
+        padding: 40px 20px 0px 20px;
+    }
+    footer{
+        padding: 40px 20px;
+    }
+    .footer-top{
+        padding-bottom: 100px;
+    }
+    .footer-bottom-btns {
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-policy-link a{
+        font-size: 10px;
+    }
+    .footer-policy-links{
+        gap: 20px;
+    }
+    .footer-bottom-btn {
+        font-size: 14px;
+    }
+    .footer-bottom-btns{
+        right: auto;
+    }
+    .footer-bottom-btns {
+        gap: 30px;
+    }
+    .moving-steps-container {
+        padding-left: 20px;
+    }
+    .moving-steps-card-head{
+        font-size: 20px;
+    }
+    .moving-steps-card-head{
+        transform: translateY(-70px);
+    }
+    .moving-steps-card-body{
+        transform: translateY(-70px);
     }
 }
