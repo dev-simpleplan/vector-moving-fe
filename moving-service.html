@@ -743,7 +743,6 @@
        </section>
        <div class="spacer"></div>
        <div class="spacer"></div>
-       <div class="spacer"></div>
        <section class="about-residential">
             <div class="about-residential-container">
                 <div class="about-residential-top">
@@ -1118,6 +1117,76 @@
                                     </div>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moving-stressfree-bottom">
+                    <div class="moving-stressfree-card active">
+                        <div class="moving-stressfree-card-cont">
+                            <div class="moving-stressfree-card-top">
+                                <div class="moving-stressfree-card-top-left">01</div>
+                                <div class="moving-stressfree-card-top-right">
+                                    <h4>Get Your Quote</h4>
+                                    <div class="moving-stressfree-card-body">
+                                        <p>Whether you're relocating to a new home, office, or simply need temporary storage solutions, our comprehensive services ensure a seamless experience from start to finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="moving-stressfree-card-tag">
+                            within 24 hours
+                        </div>
+                    </div>
+                    <div class="moving-stressfree-card">
+                        <div class="moving-stressfree-card-cont">
+                            <div class="moving-stressfree-card-top">
+                                <div class="moving-stressfree-card-top-left">02</div>
+                                <div class="moving-stressfree-card-top-right">
+                                    <h4>Get service strategy</h4>
+                                    <div class="moving-stressfree-card-body">
+                                        <p>Whether you're relocating to a new home, office, or simply need temporary storage solutions, our comprehensive services ensure a seamless experience from start to finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="moving-stressfree-card-tag">
+                            within 24 hours
+                        </div>
+                    </div>
+                    <div class="moving-stressfree-card">
+                        <div class="moving-stressfree-card-cont">
+                            <div class="moving-stressfree-card-top">
+                                <div class="moving-stressfree-card-top-left">02</div>
+                                <div class="moving-stressfree-card-top-right">
+                                    <h4>Get service strategy</h4>
+                                    <div class="moving-stressfree-card-body">
+                                        <p>Whether you're relocating to a new home, office, or simply need temporary storage solutions, our comprehensive services ensure a seamless experience from start to finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="moving-stressfree-card-tag">
+                            within 24 hours
+                        </div>
+                    </div>
+                    <div class="moving-stressfree-card">
+                        <div class="moving-stressfree-card-cont">
+                            <div class="moving-stressfree-card-top">
+                                <div class="moving-stressfree-card-top-left">02</div>
+                                <div class="moving-stressfree-card-top-right">
+                                    <h4>Get service strategy</h4>
+                                    <div class="moving-stressfree-card-body">
+                                        <p>Whether you're relocating to a new home, office, or simply need temporary storage solutions, our comprehensive services ensure a seamless experience from start to finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="moving-stressfree-card-tag">
+                            within 24 hours
                         </div>
                     </div>
                 </div>
@@ -1941,5 +2010,69 @@ document.addEventListener('DOMContentLoaded', function () {
         evt.currentTarget.className += " active";
     }
     document.getElementById('movingBtn1').click();
+    let mm7 = gsap.matchMedia();
+    mm7.add("(min-width: 992px)", ()=>{
+        gsap.set(".numbers-card.two", {yPercent:60, xPercent:0});
+    gsap.set(".numbers-card.three", {yPercent:60, xPercent:0});
+        let t6 = gsap.timeline({
+                    scrollTrigger: {
+                    trigger: ".numbers-cards",
+                    start: "-200% top",
+                    end: "200% bottom",
+                    pin: false,
+                    markers: false,
+                    scrub: 2
+                    }
+                });
+        t6.to(".numbers-card.one", { yPercent:0, xPercent:40}, 0)
+            .to(".numbers-card.two", { yPercent: 30, xPercent:10}, "<")
+            .to(".numbers-card.three", { yPercent: 10, xPercent:-20}, "<")
+            .to(".numbers-card.four", { yPercent: 20, xPercent:-50}, "<")
+    })
+   
+   
+
+    let mm3 = gsap.matchMedia();
+                mm3.add("(min-width: 992px)", () => {
+                // Calculate the total width of all .cir_card elements
+                var k = (500/420);
+                var c = 14;
+                var screenWidth = screen.width;
+                var formula = k*(screenWidth) - c + 20;
+                // GSAP animation with dynamic xPercent value
+                gsap.to('.moving-stressfree-bottom', {
+                    x: -(formula),
+                    scrollTrigger: {
+                        trigger: '.moving-stressfree-container',
+                        pin: true,
+                        scrub: true,
+                        start: "-15% top",
+                        end: "400% bottom",
+                        markers: false,
+                        onUpdate: (self)=>{
+                            var cards= document.querySelectorAll('.moving-stressfree-bottom .moving-stressfree-card')
+                            var progress = self.progress; 
+                            var intervalLength = 1 / (cards.length + 2);
+                            console.log(intervalLength,"Interval Length");
+                            var activeIndex = Math.floor(progress / intervalLength);
+                            console.log(activeIndex,"This is the active index");
+                                cards[0].classList.add('active');
+                                cards.forEach(function(card, index) {
+                                    if ((index) === activeIndex) {
+                                        card.classList.add('active');
+                                    }
+                                     else {
+                                        if(index === cards.length - 1) {
+                                            
+                                        }
+                                        else{
+                                            card.classList.remove('active');
+                                        }
+                                    }
+                                });
+                        }
+                    }
+                });
+            });
 </script>
 </html>

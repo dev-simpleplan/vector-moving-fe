@@ -2030,7 +2030,7 @@ footer{
 
 /* Moving Service Template CSS Starts */
 .moving-service-banner .home-banner-left-bottom h1{
-    font-size: clamp(70px,6vw,84px);
+    font-size: clamp(48px,6vw,84px);
     font-weight: 800;
     line-height: 75.6px;
     letter-spacing: -0.04em;
@@ -2149,6 +2149,7 @@ footer{
 .numbers-cards-container{
     display: flex;
     padding: 0 45px;
+    gap: 54px;
 }
 .numbers-card{
     padding: 20px 15px;
@@ -2157,6 +2158,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.about-residential{
+    overflow: hidden;
+}
+.about-residential-top{
+    padding: 0 20px;
 }
 .about-residential-top .about-home-label, .about-residential-top-head{
     text-align: center;
@@ -2351,9 +2358,11 @@ footer{
 .moving-stressfree-top{
     display: flex;
     gap: 70px;
+    padding-right: 80px;
 }
 .moving-stressfree-container{
     padding-left: 80px;
+    overflow: hidden;
 }
 .moving-stressfree-top-body p{
     color: #676A6C;
@@ -2361,6 +2370,79 @@ footer{
 }
 .moving-stressfree-top-left{
     max-width: 50ch;
+}
+.moving-stressfree-bottom{
+    padding-top: 70px;
+}
+.moving-stressfree-card-top{
+    display: flex;
+    gap: 4.5px;
+}
+.moving-stressfree-card-top-left{
+    font-family: var(--instru);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.08px;
+    letter-spacing: 0.03em;
+    color: #3B3B3B;
+}
+.moving-stressfree-card-top-right h4{
+   color: #DE643B;
+}
+.moving-stressfree-card-body{
+    padding-top: 20px;
+    opacity: 0;
+    transition: .4s ease all;
+}
+.moving-stressfree-card-body p{
+    color: #67645D;
+    max-width: 40ch;
+}
+.moving-stressfree-card-tag{
+    background-color: #E6CFE3;
+    border-radius: 34px;
+    padding: 5px 24px;
+    font-family: var(--instru);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.64px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #2D1D38;
+    text-transform: capitalize;
+    display: inline-flex;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    opacity: 0;
+    transition: .4s ease all;
+}
+.moving-stressfree-card-cont{
+    padding: 30px;
+}
+.moving-stressfree-card{
+    transition: .4s ease all;
+    position: relative;
+    height: 305px;
+    border: 1px solid #DE643B;
+    width:55%;
+    flex-shrink: 0;
+}
+.moving-stressfree-card.active{
+    background-color: #F5F3ED;
+    border: none;
+}
+.moving-stressfree-card.active .moving-stressfree-card-body{
+    opacity: 1;
+}
+.moving-stressfree-card.active .moving-stressfree-card-tag{
+    opacity: 1;
+}
+.moving-stressfree-bottom{
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    gap:19px;
 }
 /* Moving Service Template CSS Ends */
 
@@ -2538,6 +2620,18 @@ footer{
     .moving-customers-card{
         flex-shrink: 0;
     }
+    .moving-communications-right{
+        width: 40%;
+    }
+    .why-vector-card{
+        padding: 50px 20px;
+    }
+    .numbers-card-bottom{
+        font-size:20px;
+    }
+    .numbers-card-head {
+        font-size: 60px;
+    }
 }
 @media only screen and (max-width:1200px){
     .hamburger-icon{
@@ -2570,6 +2664,12 @@ footer{
     }
     .moving-steps-card{
         padding-right: 40px;
+    }
+    .moving-communication-left {
+        width: 50%;
+    }
+    .why-vector-moving-bottom {
+        gap: 10px;
     }
 }
 @media only screen and (max-width:1100px){
@@ -2728,8 +2828,78 @@ footer{
     .moving-steps{
         padding-bottom: 460px;
     }
+    .user-testimonial-box {
+        padding-top: 55%;
+    }
+    .moving-tabs-top{
+        overflow: hidden;
+        overflow-x: auto;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+    }
+    .moving-tabs-btn{
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    .moving-tab-content{
+        flex-direction: column;
+    }
+    .moving-tab-content-left{
+        width: 70%;
+    }
+    .moving-communication-container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .moving-communications-right{
+        position: static;
+    }
+    .moving-communication-left{
+        width: 90%;
+    }
+    .moving-communications-right{
+        width: 100%;
+    }
+    .why-vector-card{
+        width: 100%;
+    }
+    .why-vector-moving-bottom{
+        flex-direction: column;
+    }
+    .why-vector-moving-bottom .why-vector-card:not(:first-child){
+        border-left: none;
+        border-top: 1px solid #CDCDCD;
+    }
+    .why-vector-moving-bottom .why-vector-card:not(:first-child):hover{
+        border-top: 1px solid #F3F3BD;
+    }
+    .numbers-cards-container{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .numbers-card{
+        width: 45%;
+    }
+    .numbers-card-bottom{
+        font-size: 30px;
+    }
+    .numbers-card-head{
+        font-size: 70px;
+    }
+    .about-residential-bottom .home-banner-left-reviews-wrap{
+        gap: 50px;
+    }
+    .moving-stressfree-bottom{
+        overflow: auto;
+    }
+    .moving-stressfree-bottom .moving-stressfree-card:last-child{
+        margin-right: 50px;
+    }
 }
 @media only screen and (max-width:767px){
+    .user-testimonials-container {
+        margin: 0px;
+    }
     .header-container{
         padding: 0 15px;
         padding-top: 18px;
@@ -2934,5 +3104,58 @@ footer{
     .moving-steps-card-body{
         transform: translateY(-70px);
     }
-
+    .user-testimonial-box {
+        padding-top: 90%;
+    }
+    .moving-tabs-container{
+        padding: 50px 20px;
+    }
+    .moving-tab-content-left{
+        width: 100%;
+    }
+    .moving-tabs-top{
+        gap: 30px;
+    }
+    .numbers-cards-container{
+        padding: 0px 20px;
+    }
+    .numbers-card{
+        width: 100%;
+    }
+    .about-residential-bottom .home-banner-left-reviews-wrap{
+        justify-content: start;
+    }
+    .about-residential-bottom .home-banner-left-reviews-wrap .home-banner-left-review:last-child{
+        margin-right: 40px;
+    }
+    .why-vector-moving-bottom {
+        padding-top: 50px;
+    }
+    .why-vector-moving-container{
+        padding: 0px 20px;
+    }
+    .moving-stressfree-container{
+        padding-left: 20px;
+    }
+    .moving-stressfree-top{
+        flex-direction: column;
+        gap: 30px;
+        padding-right: 20px;
+    }
+    .moving-stressfree-card-cont{
+        padding: 20px;
+    }
+    .moving-stressfree-card{
+        width: 90%;
+    }
+    .moving-stressfree-card{
+        border: none;
+        background-color: #F5F3ED;
+    }
+    .moving-stressfree-card-body{
+        opacity: 1;
+    }
+    .moving-stressfree-card-tag{
+        opacity: 1;
+    }
 }
