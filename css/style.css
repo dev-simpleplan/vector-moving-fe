@@ -2444,6 +2444,202 @@ footer{
     width: 100%;
     gap:19px;
 }
+.aboutResidential-container{
+    position: relative;
+    padding-bottom: 200px;
+}
+.aboutResidential-left-bg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.aboutResidential-left-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutResidential-left{
+    padding: 80px 0px 0px 80px;
+    position: relative;
+    z-index: 3;
+}
+.aboutResidential-left-body{
+    padding-top: 20px;
+}
+.aboutResidential-left-body p{
+    max-width: 56ch;
+    color: #2D1D38;
+}
+.aboutResidential-bottom-bottom, .aboutResidential-bottom-top{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 110px;
+}
+.aboutResidential-bottom-stat-head{
+    font-family: var(--redHat);
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 39.55px;
+    letter-spacing: 0.02em;
+    color: #DE643B;
+    text-align: right;
+}
+.aboutResidential-bottom-stat-body{
+    font-family: var(--redHat);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.8px;
+    letter-spacing: 2px;
+    color: #2D1D38;
+    text-transform: uppercase;
+    max-width: 13ch;
+    text-align: right;
+}
+.aboutResidential-bottom {
+    position: relative;
+    z-index: 2;
+    padding-right: 80px;
+    margin-top: -50px;
+}
+.aboutResidential-bottom-bottom{
+    padding-top: 70px;
+}
+.moving-variety-top{
+    text-align: center;
+}
+.moving-variety-bottom{
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    padding-top: 60px;
+}
+.moving-variety-storage-img{
+    position: relative;
+    padding-top: 45%;
+}
+.moving-variety-storage{
+    width: 30%;
+}
+.moving-variety-container{
+    padding: 0px 80px;
+}
+.moving-variety-storage-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0px;
+}
+.moving-variety-storage-tags-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.moving-variety-storage-tags{
+    display: flex;
+    gap: 7px;
+}
+.moving-variety-storage-tag{
+    border: 1px solid #E6D4CE;
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    color: #DE643B;
+    padding: 4px 6px;
+}
+.moving-variety-storage-content{
+    padding-top: 40px;
+}
+.moving-variety-storage-content-head{
+    font-family: var(--redHat);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19.6px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #43433C;
+}
+.moving-variety-storage-content-body{
+    padding-top: 10px;
+}
+.moving-variety-storage-content-body p{
+    font-family: var(--instru);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0.02em;
+    color: #59535D;
+    max-width: 37ch;
+}
+.moving-variety-container .moving-relocations-btn{
+    padding-top: 100px;
+    text-align: center;
+}
+.full-options-left-head{
+    font-family: var(--redHat);
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 47.25px;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    color: #2D1D38;
+}
+.full-options-left-body p{
+    color: #676A6C;
+    max-width: 53ch;
+}
+.full-options-left-body p:not(:first-child){
+    padding-top: 10px;
+}
+.full-options-container{
+    padding: 0px 40px;
+}
+.full-options-left-body{
+    padding-top: 25px;
+}
+.full-options-right{
+    display: flex;
+    width: 50%;
+}
+.full-options-image{
+    position: relative;
+    padding-top: 55%;
+    width: 10%;
+    transition: .4s ease-in-out;
+}
+.full-options-image.active{
+    width: 60%;
+}
+.full-options-image img{
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.full-options-image-tag{
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    font-family: var(--redHat);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #2D1D38;
+    padding: 4px 6px;
+    background-color: #F3F3BD; 
+}
+.full-options-container{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
 /* Moving Service Template CSS Ends */
 
 
