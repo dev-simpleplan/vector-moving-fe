@@ -978,20 +978,23 @@ header.active .contact-info-number-num span{
 .moving-why-bottom{
     display: flex;
     align-items: end;
-    justify-content: center;
+    justify-content: start;
     padding-top: 70px;
     gap: 31px;
+    position: relative;
+    height: 380px;
 }
 .moving-why-bottom .moving-why-card{
-    width: 30%;
-    height: 260px;
+    width: 36%;
+    height: 380px;
+    flex-shrink: 0;
+    position: absolute;
 }
 .moving-why-card{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
 }
 .moving-why-card-content{
     padding: 50px 40px;
@@ -1002,14 +1005,17 @@ header.active .contact-info-number-num span{
 }
 .moving-why-card.one{
     background-color: #F3F3BD;
-    width: 40%;
-    height: 380px;
+    transform-origin: bottom left;
+    z-index: 5;
 }
 .moving-why-card.two{
     background-color: #DE643B;
+    transform-origin: bottom left;
+    z-index: 4;
 }
 .moving-why-card.three{
     background-color: #E6CFE3;
+    transform-origin: bottom left;
 }
 .moving-why-btn{
     padding-top: 50px;
@@ -1039,10 +1045,11 @@ header.active .contact-info-number-num span{
 }
 .moving-why-container{
     padding: 0 60px;
+    overflow: hidden;
 }
 .moving-why-card-head{
     font-family: var(--redHat);
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 800;
     line-height: 47.25px;
     letter-spacing: -0.01em;
@@ -1051,8 +1058,6 @@ header.active .contact-info-number-num span{
 }
 .moving-why-card.one .moving-why-card-head{
     color: #2D1D38;
-    transform: translateX(-110px);
-    font-size: 45px;
 }
 .moving-why-card.two .moving-why-card-head{
     color: #FFFFFF;
@@ -1061,22 +1066,23 @@ header.active .contact-info-number-num span{
     color: #2D1D38;
     max-width: 40ch;
 }
+.moving-why-card.two .moving-why-card-body p{
+    color: #FFFFFF;
+}
 .moving-why-card-icon{
     position: absolute;
     top: 80px;
     opacity: 0;
+}
+.moving-why-card.two .moving-why-card-icon{
+    filter: invert(1) brightness(2);
 }
 .moving-why-card-body{
     position: absolute;
     bottom: 50px;
     opacity: 0;
 }
-.moving-why-card.one .moving-why-card-body{
-    opacity: 1;
-}
-.moving-why-card.one .moving-why-card-icon{
-    opacity: 1;
-}
+
 .moving-customers{
     overflow: hidden;
 }

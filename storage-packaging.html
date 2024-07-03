@@ -916,7 +916,7 @@
                 </div>
             </div>
        </section>
-       <!-- <div class="spacer"></div>
+       <div class="spacer"></div>
        <section class="moving-why">
          <div class="moving-why-container">
             <div class="moving-why-top">
@@ -941,24 +941,28 @@
                     </div>
                 </div>
                 <div class="moving-why-card two">
-                    <div class="moving-why-card-icon">
-                        <img src="images/iconRe.svg" alt="">
-                    </div>
-                    <div class="moving-why-card-head">Customer Care</div>
-                    <div class="moving-why-card-body">
-                        <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                    <div class="moving-why-card-content">
+                        <div class="moving-why-card-icon">
+                            <img src="images/iconRe.svg" alt="">
+                        </div>
+                        <div class="moving-why-card-head">Customer Care</div>
+                        <div class="moving-why-card-body">
+                            <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                        </div>
                     </div>
                     <div class="connecting-lines">
                         <img src="images/connectingLines.svg" alt="">
                     </div>
                 </div>
                 <div class="moving-why-card three">
-                    <div class="moving-why-card-icon">
-                        <img src="images/iconRe.svg" alt="">
-                    </div>
-                    <div class="moving-why-card-head">Transparency</div>
-                    <div class="moving-why-card-body">
-                        <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                    <div class="moving-why-card-content">
+                        <div class="moving-why-card-icon">
+                            <img src="images/iconRe.svg" alt="">
+                        </div>
+                        <div class="moving-why-card-head">Transparency</div>
+                        <div class="moving-why-card-body">
+                            <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -984,7 +988,7 @@
                 </div>
             </div>
          </div>
-       </section> -->
+       </section>
        <div class="spacer"></div>
        <section class="moving-customers">
         <div class="moving-customers-container">
@@ -2018,6 +2022,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 <script src="js/animation.js"></script>
 <script>
+    gsap.set(".moving-why-card.one .moving-why-card-icon", {opacity:1});
+    gsap.set(".moving-why-card.one .moving-why-card-head", {x:-100});
+    gsap.set(".moving-why-card.one .moving-why-card-body", {opacity:1});
+    gsap.set(".moving-why-card.two", {scale: .8, marginLeft:507});
+    gsap.set(".moving-why-card.three", {scale: .8, marginLeft:914});
     let t5 = gsap.timeline({
     scrollTrigger: {
       trigger: ".moving-why",
@@ -2025,36 +2034,25 @@
       end: "400% bottom",
       pin: true,
       markers: false,
-      scrub: 1,
+      scrub: .5,
     },
   });
-  t5.to(".moving-why-card.one", { height: 265}, 0)
-    .to(".moving-why-card.two", { height: 380}, "<");
-//     .to(".mark_section .msm_l2", { opacity: 0}, "<")
-//     .to(".mark_section .line1", { opacity: 0}, "<")
-//     // .to(".mark_section .msm_l2", { left: "22%" }, "<")
-//     .to(".mark_section .line1", { yPercent: 40 }, "<");
-//   let t2 = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".mark_section",
-//       start: "top top",
-//       end: "400% bottom",
-//       pin: true,
-//       markers: false,
-//       scrub: 1,
-//     },
-//   });
-//   t2.to(".mark_section .msmli1", { yPercent: 250, scale: 1.2 }, "<")
-//     .to(".mark_section .msmli2", { yPercent: 35 }, "<")
-//     .to(".mark_section .msmli3", { yPercent: 10, scale: 1.1 }, "-=.25")
-//     .to(".mark_section .msmr_text", { xPercent: 0, scale: 1 })
-//     .to(
-//       ".mark_section .msmli2",
-//       { xPercent: 87, width: "50%", height: "55%" },
-//       "<"
-//     )
-//     //  .to(".mark_section .msmli3",{scale:1},"<")
-//     .to(".mark_section .msmli1", { scale: 1.1 }, "<");
+  t5.to(".moving-why-card.one", { scale: .8}, 0)
+    .to(".moving-why-card.two", { scale: 1, marginLeft:407}, "<")
+    .to(".moving-why-card.one .moving-why-card-icon", {opacity:0},"<")
+    .to(".moving-why-card.one .moving-why-card-head", {x:0},"<")
+    .to(".moving-why-card.one .moving-why-card-body", {opacity:0},"<")
+    .to(".moving-why-card.two .moving-why-card-icon", {opacity:1},"<")
+    .to(".moving-why-card.two .moving-why-card-head", {x:-40},"<")
+    .to(".moving-why-card.two .moving-why-card-body", {opacity:1},"<")
+    .to(".moving-why-card.three", { scale: 1, marginLeft:814})
+    .to(".moving-why-card.two", { scale: .8},"<")
+    .to(".moving-why-card.two .moving-why-card-icon", {opacity:0},"<")
+    .to(".moving-why-card.two .moving-why-card-head", {x:0},"<")
+    .to(".moving-why-card.two .moving-why-card-body", {opacity:0},"<")
+    .to(".moving-why-card.three .moving-why-card-icon", {opacity:1},"<")
+    .to(".moving-why-card.three .moving-why-card-head", {x:-55},"<")
+    .to(".moving-why-card.three .moving-why-card-body", {opacity:1},"<")
 
 var swiper = new Swiper('.moving-admired-container .swiper-container', {
       slidesPerView: 1.2,
