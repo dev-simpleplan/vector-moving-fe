@@ -2205,19 +2205,18 @@ mm.add("(min-width:992px and max-width:1100px)", () => {
     .to(".moving-steps-line.four", { yPercent: -190}, "<")
     .to(".moving-steps-card.four .moving-steps-card-body", { opacity:1},"<")
 });
-mm.add("(min-width:768px and max-width:991px)", () => {
+mm.add("((min-width:768px) and (max-width:991px))", () => {
     let t6 = gsap.timeline({
     scrollTrigger: {
       trigger: ".moving-steps",
-      start: "0% top",
       end: "400% bottom",
       pin: true,
       markers: false,
       scrub: 1
     }
   });
-  t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -130}, 0)
-    .to(".moving-steps-card.one .moving-steps-card-body", { y: -130, opacity:0}, "<")
+  t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -190}, 0)
+    .to(".moving-steps-card.one .moving-steps-card-body", { y: -190, opacity:0}, "<")
     .to(".moving-steps-line.one", { top: 30}, "<")
     .to(".moving-steps-line.one .moving-steps-line-top-circle", {backgroundColor:'transparent', border: '1px solid #969696'},"<")
     .to(".moving-steps-line.one .moving-steps-line-top-number", {color:'#aeaeae'},"<")
@@ -2249,7 +2248,7 @@ mm.add("(max-width:767px)", () => {
     let t6 = gsap.timeline({
     scrollTrigger: {
       trigger: ".moving-steps",
-      start: "20% top",
+      start: "40% top",
       end: "400% bottom",
       pin: true,
       markers: false,

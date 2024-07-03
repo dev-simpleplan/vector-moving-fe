@@ -2032,7 +2032,7 @@ footer{
 .moving-service-banner .home-banner-left-bottom h1{
     font-size: clamp(48px,6vw,84px);
     font-weight: 800;
-    line-height: 75.6px;
+    line-height: 100%;
     letter-spacing: -0.04em;
 }
 .moving-service-banner .home-banner-left-bottom h1  span{
@@ -3019,10 +3019,10 @@ footer{
         padding-left: 50px;
     }
     .moving-steps-card{
-        height: 274px;
+        /* height: 274px; */
     }
     .moving-steps{
-        padding-bottom: 460px;
+        padding-bottom: 560px;
     }
     .user-testimonial-box {
         padding-top: 55%;
@@ -3090,6 +3090,37 @@ footer{
     }
     .moving-stressfree-bottom .moving-stressfree-card:last-child{
         margin-right: 50px;
+    }
+    .aboutResidential-left{
+        padding:80px 0px 0px 40px;
+    }
+    .aboutResidential-bottom{
+        padding: 0px 40px;
+    }
+    .aboutResidential-bottom-bottom, .aboutResidential-bottom-top{
+        gap: 80px;
+    }
+    .moving-variety-container {
+        padding: 0px 40px;
+    }
+    .moving-variety-container .moving-relocations-btn{
+        padding-top: 70px;
+    }
+    .full-options-container{
+        flex-direction: column;
+        align-items: start;
+    }
+    .full-options-right {
+        width: 100%;
+    }
+    .moving-steps-card-head{
+        transform: translateY(-190px);
+    }
+    .moving-steps-card-body{
+        transform: translateY(-190px);
+    }
+    .footer-top{
+        padding-bottom: 100px;
     }
 }
 @media only screen and (max-width:767px){
@@ -3295,10 +3326,10 @@ footer{
         font-size: 20px;
     }
     .moving-steps-card-head{
-        transform: translateY(-70px);
+        transform: translateY(-50px);
     }
     .moving-steps-card-body{
-        transform: translateY(-70px);
+        transform: translateY(-50px);
     }
     .user-testimonial-box {
         padding-top: 90%;
@@ -3353,5 +3384,57 @@ footer{
     }
     .moving-stressfree-card-tag{
         opacity: 1;
+    }
+    .aboutResidential-left {
+        padding: 80px 0px 0px 20px;
+    }
+    .aboutResidential-bottom {
+        margin-top: 60px;
+        padding: 0px 20px;
+    }
+    .aboutResidential-bottom-bottom, .aboutResidential-bottom-top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutResidential-bottom-stat-head{
+        text-align: center;
+    }
+    .aboutResidential-bottom-stat-body{
+        text-align: center;
+        max-width: 14ch;
+    }
+    .aboutResidential-bottom-stat-body{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .aboutResidential-bottom-stat-head{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .aboutResidential-bottom-bottom {
+        padding-top: 50px;
+    }
+    .aboutResidential-bottom-bottom, .aboutResidential-bottom-top {
+        gap: 50px;
+    }
+    .aboutResidential-container{
+        padding-bottom: 100px;
+    }
+    .moving-variety-bottom{
+        flex-direction: column;
+    }
+    .moving-variety-storage{
+        width: 100%;
+    }
+    .moving-variety-container{
+        padding: 0px 20px;
+    }
+    .full-options-container{
+        padding: 0px 20px;
+        gap: 50px;
+    }
+    .full-options-image{
+        padding-top: 70%;
+        width: 20%;
     }
 }
