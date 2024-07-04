@@ -1079,12 +1079,29 @@ header.active .contact-info-number-num span{
 }
 .moving-why-card-body{
     position: absolute;
-    bottom: 50px;
+    bottom: 4vh;
     opacity: 0;
 }
-
 .moving-customers{
     overflow: hidden;
+}
+.moving-customers.reviewinslider{
+    padding: 0px 46px;
+}
+.moving-customers.reviewinslider .moving-customers-container{
+    padding: 0px;
+}
+.moving-customers.reviewinslider .moving-customers-bottom{
+    padding: 0px;
+    padding-top: 45px;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.moving-customers.reviewinslider .moving-customers-card{
+    width: 19.5%;
+    flex-shrink: 0;
 }
 .moving-customers-container{
     padding: 0px 46px;
@@ -2749,6 +2766,17 @@ footer{
 .spacer{
     height: 150px;
 }
+.moving-why-bottom.mob{
+    display: none;
+}
+.moving-why-bottom.mob .splide__pagination{
+    bottom: -30px;
+    gap: 10px;
+}
+.splide__pagination__page.is-active{
+    background-color: #2D1D38;
+    opacity: 1;
+}
 @keyframes tabEffect {
     from{
         opacity: 0;
@@ -2834,6 +2862,9 @@ footer{
     .numbers-card-head {
         font-size: 60px;
     }
+    .moving-why-card-head{
+        font-size: 38px;
+    }
 }
 @media only screen and (max-width:1200px){
     .hamburger-icon{
@@ -2873,6 +2904,12 @@ footer{
     .why-vector-moving-bottom {
         gap: 10px;
     }
+    .moving-why-container{
+        padding: 0px 40px;
+    }
+    .moving-customers.reviewinslider .moving-customers-card{
+        width: 25%;
+    }
 }
 @media only screen and (max-width:1100px){
     .moving-locations-bottom-locations{
@@ -2886,6 +2923,13 @@ footer{
     }
     .moving-steps-card-body{
         transform: translateY(-130px);
+    }
+    .moving-why-card-head {
+        font-size: 32px;
+        margin-left: 10px;
+    }
+    .moving-why-card-body{
+        bottom: 3vh;
     }
 }
 @media only screen and (max-width:991px){
@@ -3127,6 +3171,30 @@ footer{
     }
     .footer-top{
         padding-bottom: 100px;
+    }
+    .moving-why-bottom.desk{
+        display: none;
+    }
+    .moving-why-bottom.mob{
+        display: flex;
+        height: auto;
+    }
+    .moving-why-bottom .moving-why-card{
+        position: static;
+        width: 100%
+    }
+    .moving-why-card-icon{
+        position: static;
+        opacity: 1;
+        padding-bottom: 60px;
+    }
+    .moving-why-card-body{
+        position: static;
+        opacity: 1;
+    }
+    .moving-why-card-head{
+        text-align: left;
+        margin-left: 0px;
     }
 }
 @media only screen and (max-width:767px){
@@ -3443,4 +3511,11 @@ footer{
         padding-top: 70%;
         width: 20%;
     }
+    .moving-why-container{
+        padding: 0px 20px;
+    }
+    .moving-why-card-content{
+        padding: 50px 20px;
+    }
+    
 }

@@ -925,7 +925,7 @@
                     <h3>Why Vector Moving</h3>
                 </div>
             </div>
-            <div class="moving-why-bottom">
+            <div class="moving-why-bottom desk">
                 <div class="moving-why-card one">
                     <div class="moving-why-card-content">
                         <div class="moving-why-card-icon">
@@ -964,6 +964,52 @@
                             <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="moving-why-bottom mob splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="moving-why-card one">
+                                <div class="moving-why-card-content">
+                                    <div class="moving-why-card-icon">
+                                        <img src="images/iconRe.svg" alt="">
+                                    </div>
+                                    <div class="moving-why-card-head">Reliability</div>
+                                    <div class="moving-why-card-body">
+                                        <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="moving-why-card two">
+                                <div class="moving-why-card-content">
+                                    <div class="moving-why-card-icon">
+                                        <img src="images/iconRe.svg" alt="">
+                                    </div>
+                                    <div class="moving-why-card-head">Customer Care</div>
+                                    <div class="moving-why-card-body">
+                                        <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="moving-why-card three">
+                                <div class="moving-why-card-content">
+                                    <div class="moving-why-card-icon">
+                                        <img src="images/iconRe.svg" alt="">
+                                    </div>
+                                    <div class="moving-why-card-head">Transparency</div>
+                                    <div class="moving-why-card-body">
+                                        <p>We never overbook. With a proper planning, we always make sure that your local movers arrive on time. Our trained and experienced movers are efficient, careful and always pay great attention to details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                         </li>
+                   </ul>     
                 </div>
             </div>
             <div class="moving-why-btn">
@@ -2022,11 +2068,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 <script src="js/animation.js"></script>
 <script>
+     let mm3 = gsap.matchMedia();
+mm3.add("(min-width: 992px)", () => {
     gsap.set(".moving-why-card.one .moving-why-card-icon", {opacity:1});
-    gsap.set(".moving-why-card.one .moving-why-card-head", {x:-100});
+    gsap.set(".moving-why-card.one .moving-why-card-head", {x:'-6.5vw'});
     gsap.set(".moving-why-card.one .moving-why-card-body", {opacity:1});
-    gsap.set(".moving-why-card.two", {scale: .8, marginLeft:507});
-    gsap.set(".moving-why-card.three", {scale: .8, marginLeft:914});
+    gsap.set(".moving-why-card.two", {scale: .8, marginLeft:'35vw'});
+    gsap.set(".moving-why-card.three", {scale: .8, marginLeft:'63vw'});
     let t5 = gsap.timeline({
     scrollTrigger: {
       trigger: ".moving-why",
@@ -2038,21 +2086,22 @@
     },
   });
   t5.to(".moving-why-card.one", { scale: .8}, 0)
-    .to(".moving-why-card.two", { scale: 1, marginLeft:407}, "<")
+    .to(".moving-why-card.two", { scale: 1, marginLeft:'28vw'}, "<")
     .to(".moving-why-card.one .moving-why-card-icon", {opacity:0},"<")
     .to(".moving-why-card.one .moving-why-card-head", {x:0},"<")
     .to(".moving-why-card.one .moving-why-card-body", {opacity:0},"<")
     .to(".moving-why-card.two .moving-why-card-icon", {opacity:1},"<")
-    .to(".moving-why-card.two .moving-why-card-head", {x:-40},"<")
+    .to(".moving-why-card.two .moving-why-card-head", {x:'-2.5vw'},"<")
     .to(".moving-why-card.two .moving-why-card-body", {opacity:1},"<")
-    .to(".moving-why-card.three", { scale: 1, marginLeft:814})
+    .to(".moving-why-card.three", { scale: 1, marginLeft:'56vw'})
     .to(".moving-why-card.two", { scale: .8},"<")
     .to(".moving-why-card.two .moving-why-card-icon", {opacity:0},"<")
     .to(".moving-why-card.two .moving-why-card-head", {x:0},"<")
     .to(".moving-why-card.two .moving-why-card-body", {opacity:0},"<")
     .to(".moving-why-card.three .moving-why-card-icon", {opacity:1},"<")
-    .to(".moving-why-card.three .moving-why-card-head", {x:-55},"<")
+    .to(".moving-why-card.three .moving-why-card-head", {x:'-3.5vw'},"<")
     .to(".moving-why-card.three .moving-why-card-body", {opacity:1},"<")
+});    
 
 var swiper = new Swiper('.moving-admired-container .swiper-container', {
       slidesPerView: 1.2,
@@ -2305,7 +2354,18 @@ document.addEventListener('DOMContentLoaded', function () {
             pauseOnHover: false,
           },
           }).mount( window.splide.Extensions ); 
-        });         
+new Splide('.moving-why-bottom.mob.splide', {
+          focus  : 'center',
+          perPage: 1,
+          arrows : false,
+          gap: '0px',
+          autoWidth: false,
+          pagination : true,
+          autoplay: 1,
+          interval: 4000
+         
+          }).mount();         
+ });         
         function openCity(evt, cityName) {
         var i, x, tablinks;
         x = document.getElementsByClassName("moving-tab-content");
