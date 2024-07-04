@@ -35,7 +35,7 @@ h1{
 h2{
     font-size: clamp(32px, 5vw, 64px);
     font-weight: 800;
-    line-height: 72.32px;
+    line-height: 110%;
     letter-spacing: -0.01em;
     text-align: left;
     color: #2D1D38;
@@ -2664,6 +2664,205 @@ footer{
     gap: 120px;
 }
 /* Moving Service Template CSS Ends */
+
+/* Main Location CSS Starts */
+.home-banner.location-banner .home-banner-left-bottom{
+    max-width: 60ch;
+}
+.home-banner.location-banner .home-banner-left-bottom h2{
+    color: #FAFAFA;
+}
+.moving-peopleForward-top{
+    padding-left: 60px;
+}
+.moving-peopleForward-bottom{
+    padding-top: 60px;
+    display: flex;
+    gap: 40px;
+}
+.moving-peopleForward-bottom-right-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.moving-peopleForward-bottom-right{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.moving-peopleForward-bottom-right-stat-head{
+    font-family: var(--redHat);
+    font-size: 33.22px;
+    font-weight: 800;
+    line-height: 37.54px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2D1D38;
+    text-transform: capitalize;
+}
+.moving-peopleForward-bottom-right-stat-body{
+    font-family: var(--instru);
+    font-size: 8.12px;
+    font-weight: 400;
+    line-height: 12.18px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #DE643B;
+    padding-top: 10px;
+}
+.moving-peopleForward-bottom-right-location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.moving-peopleForward-bottom-right-location-text{
+    font-family: var(--instru);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+}
+.moving-peopleForward-bottom-right-location-icon{
+    display: flex;
+}
+.moving-peopleForward-bottom-right-locations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.moving-peopleForward-bottom-right-location.purp .moving-peopleForward-bottom-right-location-text{
+    color: #2D1D38;
+}
+.moving-peopleForward-bottom-right-location.orange .moving-peopleForward-bottom-right-location-text{
+    color: #DE643B;
+}
+.moving-peopleForward-bottom-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.moving-peopleForward-bottom-left{
+    width: 80%;
+}
+.main-locations-container{
+    padding: 0px 40px;
+}
+.main-locations-bottom{
+    padding-top: 70px;
+}
+.main-location-box-body p{
+    font-family: var(--instru);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0.01em;
+    color: #50435A;
+}
+.main-location-box-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.main-location-box-body{
+    max-width: 23ch;
+    padding-top: 20px;
+}
+.main-location-box-top{
+    padding: 54px 18px 50px 28px;
+    background-color: #F8F4F7;
+    border-radius: 18px 18px 0px 0px;
+}
+.main-location-box-bottom{
+    width: 100%;
+    position: relative;
+    padding-top: 60%;
+}
+.main-location-box-bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0px;
+}
+.main-locations-bottom{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.serviceable-locations-button{
+    border: .7px solid #E6E6E6;
+    border-radius: 15px;
+    display: inline-flex;
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D1D38;
+    transition: .4s ease all;
+    padding: 8px 30px;
+    cursor: pointer;
+}
+.serviceable-locations-button.active{
+    background-color: #2D1D38;
+    color: #FAFAFA;
+}
+.serviceable-locations-buttons{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.serviceable-locations-bottom{
+    padding-top: 40px;
+}
+.serviceable-locations-top .about-home-label{
+    text-align: center;
+}
+.serviceable-locations-head{
+    max-width: 45ch;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.serviceable-location-tab-text{
+    font-family: var(--redHat);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 18.2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2D1D38;
+}
+.serviceable-locations-tabs{
+    padding-top: 70px;
+}
+.serviceable-location-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 30px 0;
+}
+.serviceable-location-tab-icon{
+    display: flex;
+}
+.serviceable-locations-tab{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.serviceable-locations-container{
+    padding: 0px 80px;
+}
+/* Main Location CSS Ends */
 
 
 /* Button CSS Starts */
