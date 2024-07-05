@@ -3105,6 +3105,12 @@ footer{
     background-color: #2D1D38;
     transform: translate(10px, 10px);
 }
+.services-ticker{
+    padding: 0px 40px;
+}
+.services-ticker-container{
+    background-color: #F3F3BD;
+}
 /* Main Location CSS Ends */
 
 
