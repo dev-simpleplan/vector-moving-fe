@@ -657,11 +657,33 @@
        <section class="services-ticker">
             <div class="services-ticker-container">
                 <div class="services-ticker-left">
-                    
+                    <div class="about-home-label">SERVICES</div>
+                    <div class="services-ticker-head">
+                        <h3>Services According To Your Needs</h3>
+                    </div>
+                    <div class="services-ticker-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada libero purus, at ultrices ante molestie in. Pellentesque commodo vestibulum nulla, id aliquam dolor dictum a. Aliquam luctus elit non elit laoreet lacinia dapibus in odio. Aenean iaculis odio ut viverra sodales. Praesent ut libero cursus, pharetra mi nec, tristique lacus. Pellentesque a porttitor ex, ut ultrices magna. Proin ut interdum odio, ut posuere sapien. Sed at suscipit massa. Donec sed eros eget tellus elementum lacinia. Curabitur at mauris vel felis tempus ullamcorper vel quis libero.</p>
+                    </div>
                 </div>
-                <div class="services-ticker-right"></div>
+                <div class="services-ticker-right">
+                    <ul class="Infiniteslide">
+                        <li>
+                            <img src="images/locTick1.png" alt="item1">
+                        </li>
+                        <li>
+                            <img src="images/locTick2.png" alt="item2">
+                        </li>
+                        <li>
+                            <img src="images/locTick1.png" alt="item1">
+                        </li>
+                        <li>
+                            <img src="images/locTick2.png" alt="item2">
+                        </li>
+                    </ul>
+                </div>
             </div>
        </section>
+       <div class="spacer"></div>
        <section class="serviceable-locations">
             <div class="serviceable-locations-container">
                 <div class="serviceable-locations-top">
@@ -1111,6 +1133,13 @@
             </div>
           </section>
           <div class="spacer"></div>
+        <section class="moving-tips">
+            <div class="moving-tips-container">
+                <div class="moving-tips-left"></div>
+                <div class="moving-tips-right"></div>
+            </div>
+        </section>  
+        <div class="spacer"></div>
           <section class="moving-customers">
             <div class="moving-customers-container">
                 <div class="moving-customers-top">
@@ -1966,6 +1995,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="js/infinite.js"></script>
 <script src="js/animation.js"></script>
 <script>
  let mm3 = gsap.matchMedia();
@@ -2089,6 +2120,16 @@ document.addEventListener('DOMContentLoaded', function () {
             pauseOnHover: false,
           },
           }).mount( window.splide.Extensions ); 
-        });         
+        });
+        $(function(){
+            $(window).load(function(){
+            $('.Infiniteslide').infiniteslide({
+                direction: 'up',
+                speed:100,
+                clone: 10,
+                pauseonhover:false
+            });
+            });
+            });               
 </script>
 </html>

@@ -3110,6 +3110,35 @@ footer{
 }
 .services-ticker-container{
     background-color: #F3F3BD;
+    display: flex;
+    align-items: center;
+    gap:150px;
+    height: 600px;
+}
+.services-ticker-left{
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+.services-ticker-body{
+    padding-top: 50px;
+    max-width: 50ch;
+}
+.services-ticker-head{
+    max-width: 40ch;
+}
+.services-ticker-right{
+    width: 35%;
+    height: 700px;
+    overflow: hidden;
+}
+.services-ticker-right li{
+    width: 100%;
+}
+.services-ticker-right li img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
 }
 /* Main Location CSS Ends */
 
