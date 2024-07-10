@@ -1135,8 +1135,31 @@
           <div class="spacer"></div>
         <section class="moving-tips">
             <div class="moving-tips-container">
-                <div class="moving-tips-left"></div>
-                <div class="moving-tips-right"></div>
+                <div class="moving-tips-top">
+                    <div class="about-home-label">AREAS WE COVER</div>
+                    <div class="moving-tips-head">
+                        <h3>When Moving In Or From New York</h3>
+                    </div>
+                </div>
+                <div class="moving-tips-bottom">
+                    <div class="moving-tips-bottom-left">
+                        <img src="images/movingTips.png" alt="">
+                    </div>
+                    <div class="moving-tips-bottom-right">
+                        <div class="moving-tips-bottom-right-head">Lorem ipsum dolor sit amet consectetur.</div>
+                        <div class="moving-tips-bottom-right-ul">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada libero purus, at ultrices ante molestie in.</li>
+                                <li>Pellentesque commodo vestibulum nulla, id aliquam dolor dictum a. Aliquam luctus elit non elit laoreet lacinia dapibus in odio.</li>
+                                <li>Aenean iaculis odio ut viverra sodales. Praesent ut libero cursus, pharetra mi nec, tristique lacus. Pellentesque a porttitor ex, ut ultrices magna. Proin ut interdum odio, ut posuere sapien. Sed at suscipit massa.</li>
+                                <li>Donec sed eros eget tellus elementum lacinia. Curabitur at mauris vel felis tempus ullamcorper vel quis libero.</li>
+                                <li>Donec sed eros eget tellus elementum lacinia. Curabitur at mauris vel felis tempus ullamcorper vel quis libero.</li>
+                                <li>Donec sed eros eget tellus elementum lacinia. Curabitur at mauris vel felis tempus ullamcorper vel quis libero.</li>
+                                <li>Donec sed eros eget tellus elementum lacinia. Curabitur at mauris vel felis tempus ullamcorper vel quis libero.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>  
         <div class="spacer"></div>
@@ -2032,6 +2055,18 @@ mm3.add("(min-width: 992px)", () => {
     .to(".moving-why-card.three .moving-why-card-icon", {opacity:1},"<")
     .to(".moving-why-card.three .moving-why-card-head", {x:'-3.5vw'},"<")
     .to(".moving-why-card.three .moving-why-card-body", {opacity:1},"<")
+});
+document.addEventListener('DOMContentLoaded', function () {
+new Splide('.moving-why-bottom.mob.splide', {
+          focus  : 'center',
+          perPage: 1,
+          arrows : false,
+          gap: '0px',
+          autoWidth: false,
+          pagination : true,
+          autoplay: 1,
+          interval: 4000
+}).mount();         
 });    
 var swiper = new Swiper('.moving-admired-container .swiper-container', {
       slidesPerView: 1.2,
@@ -2121,15 +2156,32 @@ document.addEventListener('DOMContentLoaded', function () {
           },
           }).mount( window.splide.Extensions ); 
         });
-        $(function(){
+        let inifni = gsap.matchMedia();   
+  inifni.add("(min-width:992px)", ()=>{
+    $(function(){
             $(window).load(function(){
-            $('.Infiniteslide').infiniteslide({
-                direction: 'up',
-                speed:100,
-                clone: 10,
-                pauseonhover:false
-            });
-            });
-            });               
+                $('.Infiniteslide').infiniteslide({
+                    direction: 'up',
+                    speed:100,
+                    clone: 10,
+                    pauseonhover:false
+                });
+              });
+            });           
+  })
+  
+  inifni.add("(max-width:991px)", ()=>{
+    $(function(){
+            $(window).load(function(){
+                $('.Infiniteslide').infiniteslide({
+                    direction: 'right',
+                    speed:100,
+                    clone: 10,
+                    pauseonhover:false
+                });
+              });
+            });           
+  })
+           
 </script>
 </html>
