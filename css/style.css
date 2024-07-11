@@ -3450,7 +3450,7 @@ footer{
     left: 0;
     right: 0;
     z-index: 99;
-    animation: tabEffect 1s;
+    animation: tabEffect .5s;
   }
   
   /*hide the items when the select box is closed:*/
@@ -3748,6 +3748,43 @@ footer{
     }
     .main-locations-bottom{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-head {
+        font-size: 28px;
+        line-height: 100%;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-body p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-date{
+        font-size: 14px;
+        line-height: 100%;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-tag{
+        font-size: 14px;
+    }
+    .blogs-banner-bottom-blogs-right-blog-top .moving-insights-bottom-tag{
+        font-size: 14px;
+    }
+    .blogs-banner-bottom-blogs-right-blog-top .moving-insights-date {
+        font-size: 14px;
+        line-height: 100%;
+    }
+    .blogs-banner-bottom-blogs-right-blog-head {
+        font-size: 22px;
+        line-height: 100%;
+    }
+    .blogList-top{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .custom-select{
+        text-align: left;
+        display: inline-flex;
+    }
+    .select-items div, .select-selected{
+        position: relative;
     }
 }
 @media only screen and (max-width:1100px){
@@ -4112,6 +4149,29 @@ footer{
     }
     .moving-tips-bottom{
         flex-direction: column;
+    }
+    .blogs-banner-bottom-blogs{
+        flex-direction: column;
+    }
+    .blogs-banner-bottom-blogs-left{
+        width: 100%;
+    }
+    .blogs-banner-bottom-blogs-right{
+        width: 100%;
+    }
+    .blogLeft-top-buttons{
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        padding-bottom: 30px;
+    }
+    .blogLeft-top-button{
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    .blogList-top{
+        gap: 20px;
     }
 }
 @media only screen and (max-width:767px){
@@ -4519,5 +4579,44 @@ footer{
     }
     .moving-tips-container{
         padding: 0px 20px;
+    }
+    .blogs-banner-bottom {
+        padding: 0px 20px;
+        padding-top: 60px;
+    }
+    .blogs-banner-bottom-blogs-left-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-icon svg{
+        width: 19px;
+        height: 19px;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-body p{
+        font-size: 11px;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-tag {
+        font-size: 8.27px;
+        padding: 2px 4px;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-date{
+        font-size: 9px;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-head{
+        font-size: 16px;
+    }
+    .blogs-banner-bottom-blogs-left-top .moving-insights-bottom-body{
+        padding-bottom: 20px;
+    }
+    .blogs-banner-bottom-head {
+        font-size: 28px;
+        line-height: 100%;
+    }
+    .blogs-banner-bottom-blogs-right-head {
+        font-size: 22px;
+        line-height: 100%;
+    }
+    .blogsList{
+        padding: 0px 20px;
+        padding-top: 80px;
     }
 }
