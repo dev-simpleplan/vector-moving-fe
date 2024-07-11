@@ -3420,41 +3420,71 @@ footer{
     background-repeat: no-repeat;
     height: 10px;
     width: 10px;
-    right: 0px;
+    right: 20px;
+    top: 12.5px;
+    transition: .2s ease all;
+    transform-origin: 5px 2.5px;
+    display: flex;
   }
   
   /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
-    
+    transform: rotate(180deg);
   }
   
   /*style the items (options), including the selected item:*/
   .select-items div,.select-selected {
     color: #2D1D38;;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    padding: 8px 35px;
+    border: .8px solid #E6E6E6;
     cursor: pointer;
     user-select: none;
+    box-sizing: border-box;
   }
   
   /*style items (options):*/
   .select-items {
     position: absolute;
-    background-color: DodgerBlue;
+    background-color: #FAFAFA;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
+    animation: tabEffect 1s;
   }
   
   /*hide the items when the select box is closed:*/
   .select-hide {
     display: none;
+    animation: tabEffect 1s;
   }
   
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  .blogLeft-top-sort{
+    padding-top: 15px;
+  }
+  .blogList-blogs-head{
+    font-family: var(--redHat);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46px;
+    text-transform: capitalize;
+    color: #2D1D38;
+  }
+  .blogList-blogs .moving-insights-bottom{
+    padding-top: 25px;
+  }
+  .blogList-bottom{
+    padding-top: 60px;
+  }
+  .blogList-blogs{
+    display: none;
+    animation: tabEffect 1s;
+  }
+  .blogList-blogs .blogList-blogs-container:not(:first-child){
+    padding-top: 50px;
   }
 /* Blogs CSS Ends */
 

@@ -698,22 +698,22 @@
                     <div class="blogLeft-top-left">
                         <div class="blogLeft-top-head">Filters</div>
                         <div class="blogLeft-top-buttons">
-                            <div class="blogLeft-top-button active">
+                            <div id="catBtn" onclick="openCity(event, 'all')"  class="blogLeft-top-button active">
                                 ALL
                             </div>
-                            <div class="blogLeft-top-button">
+                            <div onclick="openCity(event, 'cat1')" class="blogLeft-top-button">
                                 Category 1
                             </div>
-                            <div class="blogLeft-top-button">
+                            <div onclick="openCity(event, 'cat2')" class="blogLeft-top-button">
                                 Category 2
                             </div>
-                            <div class="blogLeft-top-button">
+                            <div onclick="openCity(event, 'cat3')" class="blogLeft-top-button">
                                 Category 3
                             </div>
-                            <div class="blogLeft-top-button">
+                            <div onclick="openCity(event, 'cat4')" class="blogLeft-top-button">
                                 Category 4
                             </div>
-                            <div class="blogLeft-top-button">
+                            <div onclick="openCity(event, 'cat5')" class="blogLeft-top-button">
                                 Category 5
                             </div>
                         </div>
@@ -731,6 +731,790 @@
                                   <option value="5">A-Z</option>
                                   <option value="5">Z-A</option>
                                 </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogList-bottom">
+                    <div id="all" class="blogList-blogs" style="display:block">
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 1</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 2</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 3</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 4</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 5</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cat1" class="blogList-blogs">
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 1</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cat2" class="blogList-blogs">
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 2</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cat3" class="blogList-blogs">
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 3</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cat4" class="blogList-blogs">
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 4</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cat5" class="blogList-blogs">
+                        <div class="blogList-blogs-container">
+                            <div class="blogList-blogs-head">Category 5</div>
+                            <div class="moving-insights-bottom">
+                                <a href="">
+                                <div class="moving-insights-bottom-card">
+                                    <div class="moving-insights-bottom-img">
+                                        <img src="images/insght1.png" alt="">
+                                        <div class="moving-insights-bottom-tag">
+                                            Commercial Move
+                                        </div>
+                                    </div>
+                                    <div class="moving-insights-bottom-content">
+                                        <div class="moving-insights-date">26 JAN 2023</div>
+                                        <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                        <div class="moving-insights-bottom-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                        <div class="moving-insights-bottom-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                    <div class="moving-insights-bottom-card">
+                                        <div class="moving-insights-bottom-img">
+                                            <img src="images/insght2.png" alt="">
+                                            <div class="moving-insights-bottom-tag">
+                                                Commercial Move
+                                            </div>
+                                        </div>
+                                        <div class="moving-insights-bottom-content">
+                                            <div class="moving-insights-date">26 JAN 2023</div>
+                                            <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                            <div class="moving-insights-bottom-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                            </div>
+                                            <div class="moving-insights-bottom-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                        <div class="moving-insights-bottom-card">
+                                            <div class="moving-insights-bottom-img">
+                                                <img src="images/insght3.png" alt="">
+                                                <div class="moving-insights-bottom-tag">
+                                                    Commercial Move
+                                                </div>
+                                            </div>
+                                            <div class="moving-insights-bottom-content">
+                                                <div class="moving-insights-date">26 JAN 2023</div>
+                                                <div class="moving-insights-bottom-head">Effective Moving Resources and Tips</div>
+                                                <div class="moving-insights-bottom-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur. Lectus molestie nisi vitae leo amet ac nulla. Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                                <div class="moving-insights-bottom-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9429 0.247763L17.9429 26.3438L26.4844 26.3438L26.4844 0.247763L17.9429 0.247763Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4841 0.249852L0.499999 0.249857L0.5 8.82812L26.4841 8.82812L26.4841 0.249852Z" fill="#DE643B"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4634 0.247568L0.503214 20.2936L6.54297 26.3594L26.5031 6.31332L20.4634 0.247568Z" fill="#DE643B"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1137,6 +1921,21 @@ function closeAllSelect(elmnt) {
 }
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);        
+document.addEventListener("click", closeAllSelect);
+
+function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("blogList-blogs");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("blogLeft-top-button");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("catBtn").click();
 </script>
 </html>
