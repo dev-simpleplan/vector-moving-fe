@@ -3669,6 +3669,7 @@ footer{
   .blog-inner-content-right-promo-content-text{
     background-color: #F3F3BD;
     padding: 25px 20px;
+    width: 100%;
   }
   .blog-inner-content-right-promo-content{
     display: flex;
