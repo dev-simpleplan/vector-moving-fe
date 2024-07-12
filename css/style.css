@@ -46,6 +46,7 @@ h3{
     line-height: 47.25px;
     letter-spacing: -0.01em;
     color: #2D1D38;
+    text-transform: capitalize;
 }
 h4{
     font-size: clamp(24px,3vw,32px);
@@ -3562,7 +3563,7 @@ footer{
   }
   .blog-inner-banner-head{
     padding-top: 10px;
-    max-width: 85ch;
+    max-width: 81ch;
     margin: 0 auto;
   }
   .shareBox{
@@ -3729,6 +3730,200 @@ footer{
     gap: 60px;
  }
 /* Blogs CSS Ends */
+
+/* Refer a Friend CSS Starts */
+.raf-banner{
+    position: relative;
+    height: 100vh;
+    max-height: 500px;
+    margin-top: -77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.raf-banner::after{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.73%, rgba(0, 0, 0, 0.9) 100%),
+linear-gradient(360deg, rgba(0, 0, 0, 0) 62.95%, rgba(0, 0, 0, 0.51) 89.83%),
+linear-gradient(315.38deg, rgba(0, 0, 0, 0) 20.52%, rgba(0, 0, 0, 0.27) 49.4%);
+
+}
+.raf-banner-bg{
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+}
+.raf-banner-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.raf-banner-container{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.raf-banner-container .header-btn{
+    display: inline-flex;
+    padding-top: 60px;
+}
+.raf-banner-container .blog-inner-banner-read{
+    color: #F3F3BD;
+}
+.partner-moving-container{
+    padding: 0px 90px;
+}
+.partner-moving-bottom{
+    padding-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+.partner-moving-card{
+    position: relative;
+    border: 1px solid #EDECEA;
+    padding: 45px 0;
+    background-color: #FAFAFA;
+}
+.partner-moving-bg{
+    position: absolute;
+    z-index: -1;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    transition: .4s ease all;
+    background-color: #EEEADE;
+}
+.partner-moving-card:hover .partner-moving-bg{
+    transform: translate(10px, 10px);
+}
+.partner-moving-text p{
+    font-family: var(--instru);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #2D1D38;
+}
+.partner-moving-top{
+    text-align: center;
+}
+.rewards-moving-top{
+    text-align: center;
+}
+.rewards-moving-bottom{
+    margin-top: 60px;
+    border-top: 1.5px solid #E6CFE3;
+}
+.rewards-moving-form-label{
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    color: #DE643B;
+    text-transform: uppercase;
+}
+.rewards-moving-form{
+    padding-top: 39px;
+    padding-left: 60px;
+    padding-right: 120px;
+}
+.rewards-moving-from-inputs{
+    padding-top: 30px;
+}
+.rewards-moving-from-input label{
+    font-family: var(--instru);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2D1D38;
+}
+.rewards-moving-from-input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.rewards-moving-form-bottom{
+    padding-top: 45px;
+}
+.rewards-moving-form-btn-text{
+    text-align: center;
+}
+.rewards-moving-form-btn-text .header-btn{
+    display: inline-flex;
+}
+.rewards-moving-form-btn-text-span{
+    padding-top: 50px;
+    max-width: 83ch;
+    margin: 0 auto;
+}
+.rewards-moving-form-btn-text-span p{
+    font-family: var(--instru);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #676A6C;
+}
+.rewards-moving-from-input input{
+    border: none;
+    border-bottom:1px solid #DFDFDF;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: transparent;
+    color:#82788A;
+    outline: none;
+}
+.rewards-moving-from-input input::placeholder{
+    font-family: var(--instru);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    letter-spacing: 0.02em;
+    color: #82788A;
+}
+.rewards-moving-form-btn-text{
+    padding-top: 50px;
+}
+.rewards-moving-from-inputs{
+    display: flex;
+    row-gap: 30px;
+    column-gap: 88px;
+}
+.rewards-moving-from-input{
+    width: 100%;
+}
+.rewards-moving-form-bottom .rewards-moving-from-inputs{
+    flex-wrap: wrap;
+}
+.rewards-moving-from-input{
+    width: 19.6%;
+}
+.rewards-moving-from-input select{
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid #DFDFDF;
+    padding: 9px 8px;
+    box-sizing: border-box;
+    width: 100%;
+    color:#82788A;
+    outline: none;
+}
+.rewards-moving-form-bottom .rewards-moving-from-inputs .rewards-moving-from-input:last-child{
+    width: 73%;
+}
+/* Refer a Friend CSS Ends */
 
 
 /* Button CSS Starts */
