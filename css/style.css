@@ -4312,6 +4312,9 @@ linear-gradient(315.38deg, rgba(0, 0, 0, 0) 20.52%, rgba(0, 0, 0, 0.27) 49.4%);
         padding-top: 18px;
         padding-bottom: 18px;
     }
+    .contact-banner-container{
+        padding: 0px 80px;
+    }
     .about-home-container{
         padding-left: 50px;
     }
@@ -4809,6 +4812,16 @@ linear-gradient(315.38deg, rgba(0, 0, 0, 0) 20.52%, rgba(0, 0, 0, 0.27) 49.4%);
     .rewards-moving-form-top .rewards-moving-from-inputs{
         flex-wrap: wrap;
     }
+    .contact-banner-container{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .contact-banner-left{
+        width: 100%;
+    }
+    .contact-banner-right{
+        width: 100%;
+    }
 }
 @media only screen and (max-width:767px){
     .user-testimonials-container {
@@ -5291,5 +5304,20 @@ linear-gradient(315.38deg, rgba(0, 0, 0, 0) 20.52%, rgba(0, 0, 0, 0.27) 49.4%);
         padding-top: 39px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .contact-banner-container{
+        padding: 0px 20px;
+        gap: 70px;
+    }
+    .contact-banner {
+        padding-top: 30px;
+    }
+    .contact-reach-bottom{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-top: 50px;
+    }
+    .contact-reach-bottom-card{
+        padding: 20px;
     }
 }
