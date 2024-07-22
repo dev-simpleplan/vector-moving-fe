@@ -4020,10 +4020,7 @@
 
 <script>
   
-  document.addEventListener("DOMContentLoaded", function() {
-
-
-  const tabMedia = gasp.matchMedia();
+  const tabMedia = gsap.matchMedia();
 
   tabMedia.add("(min-width: 992px)", () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -4083,8 +4080,6 @@
         activateTab(0);
   });
   
-    });
-
 
   </script>
 </html>
