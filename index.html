@@ -3408,7 +3408,6 @@
       </footer>
     </main>
   </body>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script
@@ -3956,30 +3955,7 @@
         );
     });
 
-    document
-      .querySelectorAll(".moving-include-bottom-faq-head")
-      .forEach((element) => {
-        element.addEventListener("click", () => {
-          var isActive = element.classList.contains("active");
-          document
-            .querySelectorAll(".moving-include-bottom-faq-head")
-            .forEach((el) => {
-              el.classList.remove("active");
-              var nextSibling = el.nextElementSibling;
-              if (nextSibling) {
-                nextSibling.classList.remove("active");
-              }
-            });
-          if (!isActive) {
-            element.classList.add("active");
-            var nextSibling = element.nextElementSibling;
-            if (nextSibling) {
-              nextSibling.classList.add("active");
-            }
-          } else {
-          }
-        });
-      });
+   
     document.addEventListener("DOMContentLoaded", function () {
       new Splide(".moving-lets-bottom-ticker.splide", {
         type: "loop",
@@ -4019,6 +3995,31 @@
   </script>
 
 <script>
+
+document
+      .querySelectorAll(".moving-include-bottom-faq-head")
+      .forEach((element) => {
+        element.addEventListener("click", () => {
+          var isActive = element.classList.contains("active");
+          document
+            .querySelectorAll(".moving-include-bottom-faq-head")
+            .forEach((el) => {
+              el.classList.remove("active");
+              var nextSibling = el.nextElementSibling;
+              if (nextSibling) {
+                nextSibling.classList.remove("active");
+              }
+            });
+          if (!isActive) {
+            element.classList.add("active");
+            var nextSibling = element.nextElementSibling;
+            if (nextSibling) {
+              nextSibling.classList.add("active");
+            }
+          } else {
+          }
+        });
+      });
   
   const tabMedia = gsap.matchMedia();
 
