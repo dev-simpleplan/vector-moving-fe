@@ -99,24 +99,25 @@ ul {
 }
 /* Handle */
 .custom_scrollbar::-webkit-scrollbar-thumb {
-    background: #1F4D9C;
+    background: #2D1D38;
     border-radius: 10px;
 }
 /* horizontal scroll */
 .custom_scrollbar::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: #E6CFE3;
 }
 .custom_scrollbar::-webkit-scrollbar {
     height: 5px;
-    background-color: #F5F5F5;
+    background-color: #E6CFE3;
 }
 .custom_scrollbar::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #1F4D9C;
+    background-color:#2D1D38;
 }
+
 
 /* Header CSS Starts*/
 header {
@@ -5328,7 +5329,7 @@ footer {
 
 .av-btm-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 24px;
     margin-top: 50px; 
 }
@@ -5438,6 +5439,14 @@ footer {
     object-fit: cover;
 }
 
+.awv-right-tab-content{
+    display: none;
+}
+
+.awv-right-tab-content.active{
+    display: block;
+}
+
 .awv-right-content{
     display: flex;
     flex-direction: column;
@@ -5477,10 +5486,14 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 18px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
 }
 
 .at-btm-tab-link-item{
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .active-tab-indicator{
@@ -5524,7 +5537,7 @@ footer {
 
 .ab-btm-tab-content-item .team-wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 28px;
 }
 .team-item-img img{
@@ -5572,12 +5585,12 @@ padding: 28px 40px 40px 35px;
 border-radius: 20px;
 }
 
-.review-count h1{
+.ar-top .review-count h1{
     color: #2D1D38;
-    font-size: clamp(120px, 10vw, 200px);
+    font-size: clamp(80px, 10vw, 200px);
 }
 
-.review-dets{
+.ar-top .review-dets{
     display: flex;
     align-items: center;
     gap: 16px;
@@ -5586,6 +5599,12 @@ border-radius: 20px;
     margin-top: 40px;
     font-weight: 500;
     font-family: var(--redHat);
+}
+
+.ar-top .review-dets img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
 }
 
 .ar-top-right{
@@ -5612,12 +5631,15 @@ letter-spacing: 0.01em;
 
 .ar-top-right .home-banner-left-reviews-wrap{
     justify-content: space-between;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .ar-bottom .moving-customers-bottom{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 20px;
+    padding-left: 0;
 }
 
 .ar-bottom .moving-customers-card{
@@ -6624,6 +6646,87 @@ letter-spacing: 0.01em;
         justify-content: center;
         row-gap: 30px;
     }
+
+
+    .meet-movers-container{
+        padding: 0 50px ;
+    }
+    .meet-movers-in{
+        flex-direction: column; 
+    }
+    .meet-movers-left{
+        width: 100%;
+    }
+    .meet-movers-right{
+        width: 100%;
+    }
+
+    .meet-movers-left-reviews{
+        margin-top: 60px;
+    }
+
+    .meet-movers-left-reviews .home-banner-left-reviews-wrap{
+        margin-top: 30px;
+    }
+
+    .about-mission-container{
+        padding: 0% 50px;
+    }
+
+    .amc-in{
+        flex-direction: column;
+
+    }
+
+    .amc-left{
+        width: 100%;
+    }
+
+    .amc-right{
+        width: 100%;
+    }
+
+    .av-btm-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-why-vector-container{
+        padding: 0 50px;
+    }
+
+    .about-why-vector-in{
+        flex-direction: column;
+gap: 0;
+overflow: hidden;
+    }
+
+    .awv-left{
+        width: calc(100% - 20px);
+        padding: 40px 0px 40px 20px;
+    }
+
+    .awv-right{
+        width: 100%;
+    }
+
+    .about-team-container{
+        padding: 0 50px;
+    }
+
+    .about-reviews-container
+
+    .ar-top{
+        flex-direction: column;
+    }
+
+    .ar-top-right{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .ar-bottom .moving-customers-card{
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -7325,4 +7428,49 @@ letter-spacing: 0.01em;
     .aboutUs-banner-container {
         padding: 65px 20px;
     }
+
+    .meet-movers-container{
+        padding: 0 20px;
+    }
+    .about-mission-container{
+        padding: 0 20px;
+    }
+    .about-values-container{
+        padding: 0 20px;
+    }
+    .about-why-vector-container{
+        padding: 0 20px;
+    }
+    .about-team-container{
+        padding: 0 20px;
+    }
+    .about-reviews-container{
+        padding: 0 20px;
+    }
+    .about-reviews-in{
+        overflow: hidden;
+        width: 100%;
+    }
+    .ar-top .review-dets img{
+        height: 30px;
+        width: 30px;
+    }
+    .ar-top-left{
+        width: calc(100% - 45px);
+        padding: 20px 20px;
+    }
+    .ar-bottom .moving-customers-card{
+        width: 65%;
+    }
+    .active-tab-indicator{
+        margin-top: -10px;
+    }
+    .av-btm-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .amc-left-content-item-head img{
+        margin-top: auto;
+    }
+    
 }
