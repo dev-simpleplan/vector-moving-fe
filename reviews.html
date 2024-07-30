@@ -742,6 +742,7 @@
                   <div
                     onclick="openFilterTab(event,'filterContent1')"
                     class="global-filter-item filter-item active"
+                    id="defaultOpen"
                   >
                     All
                   </div>
@@ -1826,16 +1827,21 @@
       let tabLinks = document.querySelectorAll(".global-filter-item");
 
       tabContent.forEach((element) => {
-        element.style.display = "none";
+        element.classList.remove("active");
+
       });
 
       tabLinks.forEach((element) => {
         element.classList.remove("active");
       });
 
-      document.getElementById(tabContetnId).style.display = "block";
+      document.getElementById(tabContetnId).classList.add('active');
       event.currentTarget.classList.add("active");
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("defaultOpen").click();
+    });
   </script>
 
   <script>
