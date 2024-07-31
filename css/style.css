@@ -6983,6 +6983,61 @@ max-width: 12ch;
 
 /* faq css ends  */
 
+/* 404 css starts */
+.fof-container{
+    height: 100vh;
+    width: calc(100% - 80px);
+    padding: 40px;
+
+}
+
+.fof-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.fof-head{
+    text-align: center;
+    font-size: 18px;
+    color: #202322;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.fof-body{
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fof-body h1{
+    color: #2D1D38;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.fof-body p{
+    color: #2D1D38;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    max-width: 70ch;
+
+}
+
+.fof-body .moving-why-btn{
+    margin-top: 40px;
+}
+
+/* 404 css ends  */
+
 /* Button CSS Starts */
 .btn .arrow.first {
     transform: scale(0) rotate(0.001deg);
