@@ -3504,10 +3504,10 @@
       let t5 = gsap.timeline({
         scrollTrigger: {
           trigger: ".moving-why",
-          start: "top top",
+          start: "center center",
           end: "400% bottom",
           pin: true,
-          markers: false,
+          markers: !1,
           scrub: 0.5,
         },
       });
@@ -3623,7 +3623,7 @@
       let t6 = gsap.timeline({
         scrollTrigger: {
           trigger: ".moving-steps",
-          start: "-50% top",
+          start: "center center",
           end: "400% bottom",
           pin: true,
           markers: false,
