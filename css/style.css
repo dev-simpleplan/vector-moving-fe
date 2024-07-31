@@ -6959,20 +6959,25 @@ max-width: 12ch;
 .yellow-msg{
     background-color: #F3F3BD;
     padding: 26px 20px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.yellow-msg-in{
-    margin: 0 auto;
+.yellow-msg-in {
     font-size: 18px;
     text-transform: capitalize;
     color: #404040;
-    width: max-content;
+    text-align: center;
 }
 
 .yellow-msg-in span{
     color: #DE643B;
     font-weight: 500;
+}
+
+.tc-tab-content-in .moving-include-bottom-faqs{
+    padding-top: 0;
 }
 
 
