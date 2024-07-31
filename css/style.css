@@ -6901,6 +6901,83 @@ max-width: 12ch;
 
 /* tip checklist css ends */
 
+/* main services css starts */
+
+.additional-moving-container{
+    padding: 0 40px;
+}
+
+.additional-moving-bottom{
+    margin-top: 60px;
+}
+
+.additional-moving-head{
+    margin-top: 10px;
+}
+
+.additional-moving-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+}
+
+.additional-moving-cards{
+    background-color: #F5F3ED;
+    padding: 36px 30px 46px 20px;
+}
+
+.am-card-head h5{
+    color: #2D1D38;
+    font-size: clamp(18px, 2vw, 28px);
+    font-weight: 700;
+    font-family: var(--redHat);
+    letter-spacing: 0.04em;
+}
+
+.am-card-body{
+    margin-top: 26px;
+    color:#85837B;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.am-card-body ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+}
+
+/* main services css ends */
+
+/* faq css start  */
+
+.yellow-msg{
+    background-color: #F3F3BD;
+    padding: 26px 20px;
+    
+}
+
+.yellow-msg-in{
+    margin: 0 auto;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #404040;
+    width: max-content;
+}
+
+.yellow-msg-in span{
+    color: #DE643B;
+    font-weight: 500;
+}
+
+
+/* faq css ends  */
+
 /* Button CSS Starts */
 .btn .arrow.first {
     transform: scale(0) rotate(0.001deg);
@@ -9042,5 +9119,9 @@ max-width: 12ch;
 
     .tip-checklist-card-content{
         width: 100%;
+    }
+
+    .additional-moving-container{
+        padding: 0 20px;
     }
 }
