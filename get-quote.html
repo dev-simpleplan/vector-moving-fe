@@ -939,6 +939,71 @@
               </div>
             </div>
           </div>
+
+          <div class="moving-steps-slider">
+            <div class="splide moving-step-slider" role="group" >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><div class="moving-steps-slider-card one">
+                    <div class="moving-steps-slider-card-head">
+                      Guaranteed Moving Quote
+                    </div>
+                    <div class="moving-steps-slider-card-body">
+                      <p>
+                        Our easy online quote form generates an instant, accurate
+                        estimate so you can choose your movers confidently. 
+                        <br /><br />
+    
+                        No hidden fees ever – just a clear picture of your moving
+                        costs.
+                      </p>
+                    </div>
+                  </div></li>
+                  <li class="splide__slide"><div class="moving-steps-slider-card two">
+                    <div class="moving-steps-slider-card-head">Expert Moving Guidance</div>
+                    <div class="moving-steps-slider-card-body">
+                      <p>
+                        No two moves are identical. Our dedicated team gets to know
+                        your specific needs and preferences so we can create a
+                        personalized moving plan. 
+                        <br /><br />
+                        Seamless and efficient with optional packing and storage
+                        enhancements.
+                      </p>
+                    </div>
+                  </div></li>
+                  <li class="splide__slide">  <div class="moving-steps-slider-card three">
+                    <div class="moving-steps-slider-card-head">
+                      Managed Service & Support
+                    </div>
+                    <div class="moving-steps-slider-card-body">
+                      <p>
+                        Once we build a moving plan, our experienced team will
+                        manage every aspect of your service, from scheduling and
+                        packing to transportation and storage.
+                        <br />
+                        At Vector, we handle it all - just like a trusted partner
+                        should.
+                      </p>
+                    </div>
+                  </div></li>
+                  <li class="splide__slide">  <div class="moving-steps-slider-card four">
+                    <div class="moving-steps-slider-card-head">Track Your Move</div>
+                    <div class="moving-steps-slider-card-body">
+                      <p>
+                        Monitor your entire move in real-time on your phone –
+                        including the status of stored items – with our convenient
+                        tracking system.
+                        <br /><br />
+                        Enjoy added peace of mind knowing we'll be there every step
+                        of the way.
+                      </p>
+                    </div>
+                  </div></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <div class="spacer"></div>
@@ -2445,212 +2510,21 @@
           "<"
         );
     });
-    mm.add("((min-width:768px) and (max-width:991px))", () => {
-      let t6 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".moving-steps",
-          end: "400% bottom",
-          pin: true,
-          markers: false,
-          scrub: 1,
-        },
-      });
-      t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -190 }, 0)
-        .to(
-          ".moving-steps-card.one .moving-steps-card-body",
-          { y: -190, opacity: 0 },
-          "<"
-        )
-        .to(".moving-steps-line.one", { top: 30 }, "<")
-        .to(
-          ".moving-steps-line.one .moving-steps-line-top-circle",
-          { backgroundColor: "transparent", border: "1px solid #969696" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.one .moving-steps-line-top-number",
-          { color: "#aeaeae" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-circle",
-          { backgroundColor: "#2D1D38", border: "1px solid #2D1D38" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-number",
-          { color: "#3B3B3B" },
-          "<"
-        )
-        .to(".moving-steps-line.two", { yPercent: -110 }, "<")
-        .to(".moving-steps-line.three", { yPercent: -50 }, "<")
-        .to(".moving-steps-card.two", { yPercent: -80 }, "<")
-        .to(
-          ".moving-steps-card.two .moving-steps-card-body",
-          { opacity: 1 },
-          "<"
-        )
-        .to(".moving-steps-card.two .moving-steps-card-body", { opacity: 0 })
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-circle",
-          { backgroundColor: "transparent", border: "1px solid #969696" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-number",
-          { color: "#aeaeae" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-circle",
-          { backgroundColor: "#2D1D38", border: "1px solid #2D1D38" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-number",
-          { color: "#3B3B3B" },
-          "<"
-        )
-        .to(".moving-steps-card.three", { yPercent: -160 }, "<")
-        .to(".moving-steps-line.three", { yPercent: -120 }, "<")
-        .to(".moving-steps-line.four", { yPercent: -120 }, "<")
-        .to(
-          ".moving-steps-card.three .moving-steps-card-body",
-          { opacity: 1 },
-          "<"
-        )
-        .to(".moving-steps-card.three .moving-steps-card-body", { opacity: 0 })
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-circle",
-          { backgroundColor: "transparent", border: "1px solid #969696" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-number",
-          { color: "#aeaeae" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.four .moving-steps-line-top-circle",
-          { backgroundColor: "#2D1D38", border: "1px solid #2D1D38" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.four .moving-steps-line-top-number",
-          { color: "#3B3B3B" },
-          "<"
-        )
-        .to(".moving-steps-card.four", { yPercent: -240 }, "<")
-        .to(".moving-steps-line.four", { yPercent: -190 }, "<")
-        .to(
-          ".moving-steps-card.four .moving-steps-card-body",
-          { opacity: 1 },
-          "<"
-        );
-    });
-    mm.add("(max-width:767px)", () => {
-      let t6 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".moving-steps",
-          start: "40% top",
-          end: "400% bottom",
-          pin: true,
-          markers: false,
-          scrub: 1,
-        },
-      });
-      t6.to(".moving-steps-card.one .moving-steps-card-head", { y: -70 }, 0)
-        .to(
-          ".moving-steps-card.one .moving-steps-card-body",
-          { y: -70, opacity: 0 },
-          "<"
-        )
-        .to(".moving-steps-line.one", { top: 30 }, "<")
-        .to(
-          ".moving-steps-line.one .moving-steps-line-top-circle",
-          { backgroundColor: "transparent", border: "1px solid #969696" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.one .moving-steps-line-top-number",
-          { color: "#aeaeae" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-circle",
-          { backgroundColor: "#2D1D38", border: "1px solid #2D1D38" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-number",
-          { color: "#3B3B3B" },
-          "<"
-        )
-        .to(".moving-steps-line.two", { yPercent: -110 }, "<")
-        .to(".moving-steps-line.three", { yPercent: -50 }, "<")
-        .to(".moving-steps-card.two", { yPercent: -80 }, "<")
-        .to(
-          ".moving-steps-card.two .moving-steps-card-body",
-          { opacity: 1 },
-          "<"
-        )
-        .to(".moving-steps-card.two .moving-steps-card-body", { opacity: 0 })
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-circle",
-          { backgroundColor: "transparent", border: "1px solid #969696" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.two .moving-steps-line-top-number",
-          { color: "#aeaeae" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-circle",
-          { backgroundColor: "#2D1D38", border: "1px solid #2D1D38" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-number",
-          { color: "#3B3B3B" },
-          "<"
-        )
-        .to(".moving-steps-card.three", { yPercent: -160 }, "<")
-        .to(".moving-steps-line.three", { yPercent: -120 }, "<")
-        .to(".moving-steps-line.four", { yPercent: -120 }, "<")
-        .to(
-          ".moving-steps-card.three .moving-steps-card-body",
-          { opacity: 1 },
-          "<"
-        )
-        .to(".moving-steps-card.three .moving-steps-card-body", { opacity: 0 })
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-circle",
-          { backgroundColor: "transparent", border: "1px solid #969696" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.three .moving-steps-line-top-number",
-          { color: "#aeaeae" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.four .moving-steps-line-top-circle",
-          { backgroundColor: "#2D1D38", border: "1px solid #2D1D38" },
-          "<"
-        )
-        .to(
-          ".moving-steps-line.four .moving-steps-line-top-number",
-          { color: "#3B3B3B" },
-          "<"
-        )
-        .to(".moving-steps-card.four", { yPercent: -240 }, "<")
-        .to(".moving-steps-line.four", { yPercent: -190 }, "<")
-        .to(
-          ".moving-steps-card.four .moving-steps-card-body",
-          { opacity: 1 },
-          "<"
-        );
+ 
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".moving-step-slider", {
+        focus: "center",
+        perPage: 1,
+        arrows: false,
+        gap: "0px",
+        autoWidth: false,
+        pagination: true,
+        autoplay: 1,
+        interval: 4000,
+      }).mount();
     });
   </script>
 

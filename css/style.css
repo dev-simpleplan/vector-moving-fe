@@ -4156,6 +4156,16 @@ footer {
     padding-top: 80px;
     display: flex;
     gap: 50px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.moving-tips-bottom-left{
+    width: 50%;
+}
+
+.moving-tips-bottom-right{
+    width: 50%;
 }
 
 .moving-tips-bottom-left img {
@@ -8211,6 +8221,14 @@ footer {
 
     .moving-tips-bottom {
         flex-direction: column;
+    }
+
+    .moving-tips-bottom-left{
+        width: 100%;
+    }
+
+    .moving-tips-bottom-right{
+        width: 100%;
     }
 
     .blogs-banner-bottom-blogs {
