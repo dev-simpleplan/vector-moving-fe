@@ -6347,6 +6347,7 @@ footer {
 
 .why-banner-container{
     padding: 0 0 0 70px;
+    overflow: hidden;
 }
 
 .why-left{
@@ -6985,9 +6986,10 @@ max-width: 12ch;
 
 /* 404 css starts */
 .fof-container{
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: calc(100% - 80px);
     padding: 40px;
+    overflow: hidden;
 
 }
 
@@ -7009,7 +7011,7 @@ max-width: 12ch;
 }
 
 .fof-body{
-    height: calc(100% - 40px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7036,7 +7038,68 @@ max-width: 12ch;
     margin-top: 40px;
 }
 
+
 /* 404 css ends  */
+
+/* policy css starts */
+
+.policy-container{
+    padding: 0 70px;
+    padding-top: 40px;
+}   
+.policy-desc{
+    margin-top: 22px;
+    max-width: 50ch;
+}
+
+.policy-content{
+    width: 60%;
+    margin-left: 140px;
+}
+
+.policy-content h1,.policy-content h2,.policy-content h3,.policy-content h4,.policy-content h5,.policy-content h6{
+    color: #DE643B;
+    font-weight: 800;
+    font-family: var(--redHat);
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.policy-content p{
+    margin-top: 20px;
+    color: #2D1D38;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.policy-content ul{
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #2D1D38;
+    letter-spacing: 0.01em;
+
+
+}
+
+.policy-content ol{
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #2D1D38;
+    letter-spacing: 0.01em;
+
+}
+
+/* policy css ends */
+
 
 /* Button CSS Starts */
 .btn .arrow.first {
@@ -8334,7 +8397,15 @@ max-width: 12ch;
         flex-wrap: wrap;
     }
 
- 
+    .policy-content{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .policy-container{
+        padding: 0 50px;
+        padding-top: 40px;
+    }
 
 }
 
@@ -9183,5 +9254,9 @@ max-width: 12ch;
 
     .additional-moving-container{
         padding: 0 20px;
+    }
+    .policy-container{
+        padding: 0 20px;
+        padding-top: 40px;
     }
 }
