@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
 // populate with play btn
 
 document.addEventListener("DOMContentLoaded", () => {
