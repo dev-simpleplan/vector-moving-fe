@@ -78,3 +78,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+//opactiy on scroll gsap
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll('.trans-elem');
+  elements.forEach((element) => {
+    gsap.to(element, {
+      y: 0,
+      duration: .5,
+      ease:'none',
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 80%',
+        end: 'bottom 20%',
+        stagger: 0.1,
+      },
+      onComplete: () => {
+       setTimeout(() => {
+        element.closest('.trans-op').classList.add('active');
+       }, 1000);
+      }
+    });
+  });
+});

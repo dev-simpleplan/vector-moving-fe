@@ -70,6 +70,31 @@ ul {
     list-style: none;
     display: flex;
 }
+.trans-op{
+    overflow: hidden;
+}
+.trans-op.active{
+    overflow:visible;
+}
+.trans-op .trans-elem{
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+}
+.action-buttons{
+    position: fixed;
+    z-index: 9;
+    bottom: 5%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.action-buttons a svg circle {
+    transition: all .3s ease;
+}
+.action-buttons a:hover svg circle {
+    fill: #CFC071;
+}
 .custom_scrollbar::-webkit-scrollbar {
     width: 5px;
 }
@@ -3110,7 +3135,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .moving-peopleForward-bottom-right-stat-head {
@@ -3815,7 +3840,7 @@ footer {
 .home-banner.blog-inner-banner {
     justify-content: start;
 }
-.blog-inner-banner-tag {
+.blog-inner-banner-tag p {
     font-family: var(--instru);
     font-size: 10px;
     font-weight: 500;
@@ -3836,7 +3861,7 @@ footer {
     padding: 0px 20px;
     padding-top: 115px;
 }
-.blog-inner-banner-read {
+.blog-inner-banner-read p{
     font-family: var(--redHat);
     font-size: 12px;
     font-weight: 700;
@@ -5736,7 +5761,7 @@ footer {
 /* why us css ends */
 /* tips checklist css starts */
 .tip-checklist-banner {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .tip-checklist-banner-container {
     padding: 0 70px;
