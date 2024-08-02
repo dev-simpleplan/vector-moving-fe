@@ -717,7 +717,7 @@ header.active .contact-info-number-num span, header.dark .contact-info-number-nu
 }
 .about-home-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     padding-left: 80px;
     gap: 60px;
 }
@@ -727,10 +727,10 @@ header.active .contact-info-number-num span, header.dark .contact-info-number-nu
     object-fit: cover;
 }
 .about-home-right {
-    width: 90%;
+    width: 50%;
 }
 .about-home-left {
-    width: 90%;
+    width: 50%;
 }
 .about-home-body {
     padding-top: 35px;
@@ -974,6 +974,7 @@ header.active .contact-info-number-num span, header.dark .contact-info-number-nu
 }
 .moving-locations-bottom-location-link {
     padding-top: 20px;
+    align-self: end;
 }
 .moving-locations-bottom-locations {
     padding-top: 30px;
@@ -982,6 +983,7 @@ header.active .contact-info-number-num span, header.dark .contact-info-number-nu
 }
 .moving-locations-bottom-location {
     min-width: 211px;
+    display: grid;
 }
 .moving-locations-bottom-location-list {
     padding-top: 15px;
